@@ -1,23 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "name": "Awesome Machine Learning",
+  "projectType": "general",
+  "projectName": "Awesome Machine Learning",
+  "projectDescription": "A curated list of machine learning frameworks, libraries, tools, and learning resources organized by programming language.",
   "theme": "palm",
-  "colors": {
-    "primary": "#4F46E5",
-    "light": "#EEF2FF",
-    "dark": "#1E1B4B"
-  },
-  "navbar": {
-    "primary": {
-      "type": "github",
-      "href": "https://github.com/josephmisiti/awesome-machine-learning"
-    }
-  },
-  "footer": {
-    "socials": {
-      "github": "https://github.com/josephmisiti/awesome-machine-learning"
-    }
-  },
+  "primaryColor": "#4F46E5",
+  "lightColor": "#EEF2FF",
+  "darkColor": "#1E1B4B",
   "navigation": {
     "tabs": [
       {
@@ -87,5 +75,24 @@
         ]
       }
     ]
-  }
+  },
+  "keyFeatures": [
+    "Curated ML libraries across 30+ programming languages including Python, R, Julia, JavaScript, Go, Rust, Java, C++, and more",
+    "Coverage of major ML domains: deep learning, NLP, computer vision, reinforcement learning, data analysis",
+    "Tools section covering MLOps, experiment tracking, model serving, and vector databases",
+    "Comprehensive learning resources: books, online courses, blogs, events, and meetups",
+    "Community-maintained with contribution guidelines and deprecation tracking"
+  ],
+  "publicApiSurface": [
+    "Python: scikit-learn, PyTorch, TensorFlow, Keras, JAX, Hugging Face Transformers",
+    "Python: spaCy, NLTK, OpenCV, Detectron2, timm",
+    "Python: Pandas, NumPy, SciPy, matplotlib, Plotly",
+    "R: caret, ggplot2, dplyr, Keras (R interface)",
+    "Julia: Flux.jl, MLJ.jl, Knet.jl",
+    "JavaScript: TensorFlow.js, Brain.js, ml5",
+    "Java: Weka, Deeplearning4j, DJL, MLlib (Spark)",
+    "C++: Caffe, XGBoost, LightGBM, mlpack, DLib",
+    "Go: Gorgonia, GoLearn, Spago",
+    "Tools: MLflow, DVC, Weights & Biases, Qdrant, Milvus, Chroma"
+  ]
 }

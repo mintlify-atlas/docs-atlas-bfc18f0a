@@ -1,0 +1,107 @@
+---
+title: "Introduction"
+description: "What Awesome Machine Learning is, how it's organized, and how to navigate 30+ programming languages worth of ML tools."
+---
+
+Awesome Machine Learning is a community-curated reference catalog of machine learning frameworks, libraries, and software — organized by programming language. It was created to help researchers, engineers, and students quickly find the right ML tool for any task, no matter which language they work in.
+
+<Note>
+  This list is maintained by the community. If you want to add a library or fix an entry, see the [contributing guide](/contributing).
+</Note>
+
+## What's in the list
+
+The list covers more than 30 programming languages, from Python and R to Go, Rust, Julia, Scala, and beyond. Within each language, entries are grouped by domain:
+
+- **General-purpose machine learning** — scikit-learn, XGBoost, and similar toolkits
+- **Deep learning** — PyTorch, TensorFlow, Keras, JAX
+- **Natural language processing** — spaCy, Hugging Face Transformers, NLTK
+- **Computer vision** — OpenCV, Detectron2, timm
+- **Data analysis and visualization** — Pandas, NumPy, matplotlib, Plotly
+- **Reinforcement learning, speech recognition, federated learning**, and more
+
+<Tip>
+  Python has the largest ML ecosystem in the list. Start with [Python: General-Purpose](/python/general-purpose) if you're unsure where to begin.
+</Tip>
+
+## How the list is organized
+
+Every language section follows the same two-level structure: language first, then domain within that language.
+
+```
+Language (e.g., Python)
+├── General-Purpose Machine Learning
+├── Deep Learning
+├── Natural Language Processing
+├── Computer Vision
+└── Data Analysis / Data Visualization
+```
+
+This means you can jump directly to the combination you need — for example, NLP in Julia or computer vision in C++.
+
+## Explore by language
+
+<Columns cols={2}>
+  <Card title="Python" icon="python" href="/python/general-purpose">
+    The largest ML ecosystem, with frameworks for every subdomain.
+  </Card>
+  <Card title="R" icon="chart-bar" href="/languages/r">
+    Statistical computing, data visualization, and ML packages for R.
+  </Card>
+  <Card title="JavaScript & TypeScript" icon="js" href="/languages/javascript-typescript">
+    Browser-side and Node.js ML, including TensorFlow.js and ONNX.
+  </Card>
+  <Card title="Julia" icon="code" href="/languages/julia">
+    High-performance numerical computing and ML for Julia.
+  </Card>
+  <Card title="Java & JVM" icon="java" href="/languages/java-jvm">
+    Weka, DL4J, Smile, and JVM-ecosystem ML libraries.
+  </Card>
+  <Card title="C++ & C" icon="c" href="/languages/cpp-c">
+    High-performance ML libraries including Darknet and Dlib.
+  </Card>
+  <Card title="Go & Rust" icon="gear" href="/languages/go-rust">
+    Systems-languages ML libraries for performance-critical pipelines.
+  </Card>
+  <Card title="Tools & Platforms" icon="wrench" href="/tools/mlops-experiment-tracking">
+    MLOps, experiment tracking, vector databases, and LLM tooling.
+  </Card>
+</Columns>
+
+## Deprecation policy
+
+Entries in the list are marked **[Deprecated]** and retained for historical reference when either of the following is true:
+
+- The repository owner explicitly states the library is no longer maintained.
+- The repository has received no commits in **2–3 years**.
+
+Deprecated entries are not removed so that existing projects that depend on them can still find documentation and context.
+
+<Warning>
+  If you're starting a new project, avoid libraries marked **[Deprecated]**. Check the linked repository for the last commit date before adopting any library.
+</Warning>
+
+## Further resources
+
+The list is accompanied by several companion references for learning and community engagement:
+
+<CardGroup cols={2}>
+  <Card title="Books" icon="book" href="/resources/books-ml">
+    Free and paid machine learning books available for download or purchase.
+  </Card>
+  <Card title="Courses" icon="graduation-cap" href="/resources/courses">
+    Mostly free online courses covering ML, deep learning, and data science.
+  </Card>
+  <Card title="Blogs & newsletters" icon="rss" href="/resources/blogs-newsletters">
+    Data science and ML blogs and newsletters worth following.
+  </Card>
+  <Card title="Events" icon="calendar" href="/resources/events">
+    Professional machine learning conferences and events.
+  </Card>
+  <Card title="Meetups" icon="users" href="/resources/meetups">
+    Free-to-attend local meetups and community events.
+  </Card>
+  <Card title="Contributing" icon="code-pull-request" href="/contributing">
+    How to submit a pull request to add or update entries.
+  </Card>
+</CardGroup>

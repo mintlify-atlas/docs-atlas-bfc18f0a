@@ -1,0 +1,141 @@
+---
+title: 'Java & JVM'
+description: 'ML libraries for the JVM ecosystem — covering Java, Kotlin, and Scala with frameworks for general-purpose ML, NLP, deep learning, and distributed computing.'
+keywords: ['java', 'jvm', 'kotlin', 'scala', 'deeplearning4j', 'weka', 'spark', 'nlp', 'machine learning']
+---
+
+The JVM ecosystem offers battle-tested ML libraries suited for enterprise environments, with strong support for distributed computing via Apache Spark, Flink, and Hadoop.
+
+<Tabs>
+  <Tab title="Java">
+
+## General-purpose ML
+
+<Columns cols={2}>
+  <Card title="Weka" icon="graduation-cap" href="https://www.cs.waikato.ac.nz/ml/weka/">
+    Collection of ML algorithms for data mining tasks from the University of Waikato, with a GUI workbench and Java API.
+  </Card>
+  <Card title="Smile" icon="smile" href="https://haifengl.github.io/">
+    Statistical Machine Intelligence & Learning Engine: a fast, comprehensive ML library covering classification, regression, clustering, NLP, and visualization.
+  </Card>
+  <Card title="Tribuo" icon="building-columns" href="https://tribuo.org">
+    Machine learning library written in Java by Oracle with a focus on reproducibility, provenance tracking, and multi-framework interop.
+  </Card>
+  <Card title="H2O" icon="water" href="https://github.com/h2oai/h2o-3">
+    ML engine that supports distributed learning on Hadoop, Spark, or your laptop via APIs in R, Python, Scala, and REST/JSON.
+  </Card>
+  <Card title="Encog" icon="brain" href="https://github.com/encog/encog-java-core">
+    Advanced neural network and ML framework supporting multithreaded resilient propagation and GPU acceleration.
+  </Card>
+  <Card title="ELKI" icon="magnifying-glass" href="https://elki-project.github.io/">
+    Java toolkit for data mining focused on unsupervised methods: clustering and outlier detection.
+  </Card>
+</Columns>
+
+## Apache Spark & distributed ML
+
+<Columns cols={2}>
+  <Card title="MLlib (Apache Spark)" icon="fire" href="https://spark.apache.org/docs/latest/mllib-guide.html">
+    Distributed machine learning library in Spark: classification, regression, clustering, collaborative filtering, and pipelines.
+  </Card>
+  <Card title="Hydrosphere Mist" icon="cloud" href="https://github.com/Hydrospheredata/mist">
+    Service for deploying Apache Spark MLlib models as realtime, batch, or reactive web services.
+  </Card>
+  <Card title="ORYX" icon="arrows-spin" href="https://github.com/oryxproject/oryx">
+    Lambda Architecture Framework using Apache Spark and Kafka, specializing in real-time large-scale ML.
+  </Card>
+  <Card title="Apache Mahout" icon="elephant" href="https://github.com/apache/mahout">
+    Distributed ML framework built on Spark for large-scale collaborative filtering, clustering, and classification.
+  </Card>
+</Columns>
+
+## NLP
+
+<Columns cols={2}>
+  <Card title="Stanford CoreNLP" icon="comment-dots" href="https://nlp.stanford.edu/software/corenlp.shtml">
+    Comprehensive NLP toolkit providing tokenization, POS tagging, NER, parsing, coreference resolution, and sentiment analysis.
+  </Card>
+  <Card title="OpenNLP" icon="comments" href="https://opennlp.apache.org/">
+    Apache machine learning-based toolkit for processing natural language text with trainable components.
+  </Card>
+  <Card title="MALLET" icon="envelope-open-text" href="http://mallet.cs.umass.edu/">
+    Java-based package for statistical NLP: document classification, clustering, topic modeling, and information extraction.
+  </Card>
+  <Card title="Apache cTAKES" icon="hospital" href="https://ctakes.apache.org/">
+    Clinical Text Analysis and Knowledge Extraction System for information extraction from electronic medical records.
+  </Card>
+</Columns>
+
+## Deep learning
+
+<Columns cols={2}>
+  <Card title="Deeplearning4j (DL4J)" icon="layer-group" href="https://github.com/deeplearning4j/deeplearning4j">
+    Scalable deep learning for industry with parallel GPU support, built for the JVM and Hadoop/Spark integration.
+  </Card>
+  <Card title="DJL (Deep Java Library)" icon="java" href="https://github.com/deepjavalibrary/djl">
+    Open-source, high-level, engine-agnostic Java framework for deep learning designed to be easy for Java developers.
+  </Card>
+</Columns>
+
+## Distributed data processing
+
+<Columns cols={2}>
+  <Card title="Apache Flink" icon="stream" href="https://flink.apache.org/">
+    Open source platform for distributed stream and batch data processing with exactly-once semantics.
+  </Card>
+  <Card title="Apache Hadoop" icon="server" href="https://github.com/apache/hadoop">
+    Distributed storage and processing framework (HDFS + MapReduce) forming the backbone of many big-data ML pipelines.
+  </Card>
+</Columns>
+
+  </Tab>
+  <Tab title="Kotlin">
+
+## Deep learning
+
+<Columns cols={2}>
+  <Card title="KotlinDL" icon="code" href="https://github.com/JetBrains/KotlinDL">
+    Deep learning framework written in Kotlin by JetBrains, supporting Keras-compatible model loading and inference on JVM and Android.
+  </Card>
+</Columns>
+
+  </Tab>
+  <Tab title="Scala">
+
+## NLP
+
+<Columns cols={2}>
+  <Card title="Spark NLP" icon="comment-dots" href="https://github.com/JohnSnowLabs/spark-nlp">
+    NLP library built on Apache Spark ML providing production-ready annotations for ML pipelines that scale in distributed environments.
+  </Card>
+  <Card title="Breeze" icon="calculator" href="https://github.com/scalanlp/breeze">
+    Numerical processing library for Scala covering linear algebra, numerical optimization, and signal processing.
+  </Card>
+  <Card title="FACTORIE" icon="diagram-project" href="https://github.com/factorie/factorie">
+    Toolkit for deployable probabilistic modelling in Scala with relational factor graphs and parameter estimation.
+  </Card>
+</Columns>
+
+## General-purpose ML
+
+<Columns cols={2}>
+  <Card title="BIDMach" icon="microchip" href="https://github.com/BIDData/BIDMach">
+    CPU and GPU-accelerated machine learning library for Scala with support for large-scale matrix operations.
+  </Card>
+  <Card title="ONNX-Scala" icon="exchange-alt" href="https://github.com/EmergentOrder/onnx-scala">
+    ONNX API and backend for typeful, functional deep learning in Scala 3 with compile-time shape checking.
+  </Card>
+  <Card title="isolation-forest" icon="shield-halved" href="https://github.com/linkedin/isolation-forest">
+    Distributed Spark/Scala implementation of the isolation forest algorithm for unsupervised outlier detection by LinkedIn.
+  </Card>
+  <Card title="H2O Sparkling Water" icon="droplet" href="https://github.com/h2oai/sparkling-water">
+    Integration package enabling H2O ML algorithms within Apache Spark workflows.
+  </Card>
+</Columns>
+
+  </Tab>
+</Tabs>
+
+<Tip>
+  Deeplearning4j, ONNX-Scala, and DJL all support ONNX model import, enabling you to train in Python and serve on the JVM without rewriting code.
+</Tip>

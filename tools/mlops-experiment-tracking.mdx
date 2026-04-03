@@ -1,0 +1,131 @@
+---
+title: 'MLOps and experiment tracking'
+description: 'Tools for managing the ML lifecycle — from experiment logging and data versioning to pipeline orchestration, CI/CD, and production monitoring.'
+keywords: ['mlops', 'experiment tracking', 'mlflow', 'weights and biases', 'dvc', 'kedro', 'evidently', 'monitoring']
+---
+
+MLOps tooling covers the full lifecycle of machine learning: tracking experiments, versioning data and models, orchestrating pipelines, automating CI/CD, and monitoring models in production. This page lists the tools referenced in the Awesome Machine Learning repository.
+
+<Note>
+Many tools in this space overlap categories. MLFlow, for example, handles experiment tracking, model registry, and deployment. Review each tool's scope before committing to a stack.
+</Note>
+
+## Experiment tracking
+
+Experiment tracking tools log hyperparameters, metrics, artifacts, and code to make runs reproducible and comparable.
+
+<CardGroup cols={2}>
+  <Card title="MLFlow" icon="flask" href="https://mlflow.org/">
+    Platform to manage the ML lifecycle including experimentation, reproducibility, and deployment. Framework and language agnostic with built-in integrations for major frameworks.
+  </Card>
+  <Card title="Weights & Biases" icon="chart-line" href="https://www.wandb.com/">
+    Experiment tracking, dataset versioning, hyperparameter search, visualization, and team collaboration. Provides a hosted dashboard and SDK.
+  </Card>
+  <Card title="CometML" icon="meteor" href="https://www.comet.com/">
+    MLOps platform with experiment tracking, model production monitoring, a model registry, and data lineage from training through to production.
+  </Card>
+  <Card title="Neptune.ai" icon="water" href="https://neptune.ai/">
+    Experiment tracking and model registry focused on team collaboration. Integrates with most ML frameworks and workflow tools.
+  </Card>
+  <Card title="Sacred" icon="book" href="https://github.com/IDSIA/sacred">
+    Python tool to configure, organize, log, and reproduce experiments. Designed around a notebook-lab metaphor with community-built add-ons for storage and visualization.
+  </Card>
+  <Card title="guild.ai" icon="sliders" href="https://guild.ai/">
+    Cross-platform, framework-independent tool to log, analyze, compare, and optimize experiments. Includes integrated visualizers such as TensorBoard.
+  </Card>
+</CardGroup>
+
+## Data versioning
+
+Data versioning tools bring Git-like workflows to datasets and model artifacts, enabling reproducibility and collaboration at the data layer.
+
+<CardGroup cols={2}>
+  <Card title="DVC" icon="code-branch" href="https://github.com/iterative/dvc">
+    Open-source version control system for ML projects with pipeline support. Makes ML projects reproducible and shareable by tracking data and model files alongside code.
+  </Card>
+  <Card title="DVClive" icon="chart-simple" href="https://github.com/iterative/dvclive">
+    Python library for logging experiment metrics into simply formatted local files. Designed to integrate with DVC pipelines.
+  </Card>
+  <Card title="MLEM" icon="tag" href="https://github.com/iterative/mlem">
+    Version and deploy ML models following GitOps principles. Stores model metadata alongside code using Git and DVC conventions.
+  </Card>
+</CardGroup>
+
+## Pipeline orchestration
+
+Pipeline tools let you define, schedule, and run reproducible ML workflows across different execution backends.
+
+<CardGroup cols={2}>
+  <Card title="Kedro" icon="diagram-project" href="https://github.com/quantumblacklabs/kedro/">
+    Data and development workflow framework that implements best practices for data pipelines with an eye towards productionizing ML models.
+  </Card>
+  <Card title="Hamilton" icon="arrows-split-up-and-left" href="https://github.com/dagworks-inc/hamilton">
+    Lightweight library to define data transformations as a directed acyclic graph (DAG). Helps author reliable feature engineering and ML pipelines.
+  </Card>
+  <Card title="Flyte" icon="circle-nodes" href="https://flyte.org/">
+    Makes it easy to create concurrent, scalable, and maintainable workflows for machine learning and data processing with strong typing and reproducibility guarantees.
+  </Card>
+  <Card title="Couler" icon="shuffle" href="https://github.com/couler-proj/couler">
+    Unified interface for constructing and managing ML workflows on different engines, including Argo Workflows, Tekton Pipelines, and Apache Airflow.
+  </Card>
+  <Card title="ClearML" icon="gears" href="https://github.com/clearml/clearml">
+    Auto-Magical CI/CD to streamline AI workloads. Covers experiment management, data management, pipeline orchestration, scheduling, and serving in one MLOps/LLMOps solution.
+  </Card>
+  <Card title="Pachyderm" icon="layer-group" href="https://www.pachyderm.io/">
+    Data versioning and pipeline orchestration platform built around a Git-like model for data. Supports incremental processing and lineage tracking.
+  </Card>
+</CardGroup>
+
+## CI/CD for ML
+
+<CardGroup cols={2}>
+  <Card title="CML (Continuous Machine Learning)" icon="rotate" href="https://github.com/iterative/cml">
+    Library for continuous integration with ML projects. Uses GitHub Actions and GitLab CI to train and evaluate models in production-like environments and automatically generates visual reports with metrics and graphs in pull or merge requests. Framework and language agnostic.
+  </Card>
+</CardGroup>
+
+## Model monitoring
+
+Monitoring tools detect data drift, performance degradation, and fairness issues in deployed models.
+
+<CardGroup cols={2}>
+  <Card title="Evidently" icon="eye" href="https://github.com/evidentlyai/evidently">
+    Interactive reports to analyze ML models during validation or production monitoring. Covers data drift, model performance, and data quality checks.
+  </Card>
+  <Card title="NannyML" icon="bell" href="https://bit.ly/nannyml-github-machinelearning">
+    Python library capable of fully capturing the impact of data drift on model performance. Estimates post-deployment performance without access to ground-truth labels.
+  </Card>
+  <Card title="Deepchecks" icon="shield-check" href="https://github.com/deepchecks/deepchecks">
+    Validation and testing of ML models and data during development, deployment, and production. Includes checks for model performance, data integrity, and distribution mismatches.
+  </Card>
+  <Card title="Frouros" icon="wave-square" href="https://github.com/IFCA/frouros">
+    Open-source Python library for drift detection in ML systems. Implements a broad range of statistical drift detection methods.
+  </Card>
+  <Card title="Arize AI" icon="magnifying-glass-chart" href="https://www.arize.com">
+    Model validation and performance monitoring with drift detection, explainability, and visualization across structured and unstructured data.
+  </Card>
+</CardGroup>
+
+<Tip>
+For LLM-specific observability and evaluation tools, see [LLM tooling](/tools/llm-tooling).
+</Tip>
+
+## Notebooks and development environments
+
+<CardGroup cols={2}>
+  <Card title="ML Workspace" icon="laptop-code" href="https://github.com/ml-tooling/ml-workspace">
+    All-in-one web-based IDE for ML and data science, deployed as a Docker container. Preloaded with TensorFlow, PyTorch, Jupyter, VS Code, and a variety of data science libraries.
+  </Card>
+  <Card title="Deepnote" icon="notebook" href="https://github.com/deepnote/deepnote">
+    Drop-in replacement for Jupyter with AI-first design, new block types, and native data integrations. Supports Python, R, and SQL with real-time cloud collaboration.
+  </Card>
+  <Card title="Notebooks (Docker)" icon="docker" href="https://github.com/rlan/notebooks">
+    Starter kit providing Docker images for all combinations of Python versions, ML frameworks (Keras, PyTorch, TensorFlow), and CPU/CUDA versions.
+  </Card>
+</CardGroup>
+
+## Related pages
+
+- [Model serving and deployment](/tools/model-serving-deployment)
+- [LLM tooling](/tools/llm-tooling)
+- [Python general-purpose ML](/python/general-purpose)

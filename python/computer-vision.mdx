@@ -1,0 +1,126 @@
+---
+title: 'Computer vision libraries'
+description: 'Python computer vision libraries for image processing, object detection, face recognition, segmentation, and generative models.'
+keywords: ['opencv', 'scikit-image', 'detectron2', 'face recognition', 'albumentations', 'timm', 'pytorch vision']
+---
+
+A curated reference of Python computer vision libraries sourced from the [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning) list.
+
+---
+
+## Image processing fundamentals
+
+<Columns cols={2}>
+  <Card title="OpenCV (Python)" icon="eye" href="https://opencv.org">
+    The most widely used computer vision library. Python bindings (via `opencv-python`) for real-time image and video processing, feature detection, camera calibration, and more.
+  </Card>
+  <Card title="scikit-image" icon="image" href="https://github.com/scikit-image/scikit-image">
+    Collection of algorithms for image processing in Python. Covers filtering, morphology, segmentation, color space conversion, and feature detection with a NumPy-based API.
+  </Card>
+</Columns>
+
+---
+
+## Object detection and segmentation
+
+<Columns cols={2}>
+  <Card title="Detectron2" icon="crosshairs" href="https://github.com/facebookresearch/detectron2">
+    FAIR's next-generation research platform for object detection and segmentation. Implements Mask R-CNN, Faster R-CNN, panoptic segmentation, and more. Powered by PyTorch.
+  </Card>
+  <Card title="timm" icon="images" href="https://github.com/rwightman/pytorch-image-models">
+    PyTorch Image Models. Pretrained weights for ResNet, EfficientNet, Vision Transformer, NFNet, MobileNet, and 300+ more architectures. The standard model zoo for image classification.
+  </Card>
+  <Card title="segmentation_models.pytorch" icon="vector-square" href="https://github.com/qubvel/segmentation_models.pytorch">
+    PyTorch toolkit offering pre-trained segmentation models (UNet, PSPNet, DeepLab, and more) with pre-trained encoder weights for pixel-level object segmentation.
+  </Card>
+  <Card title="segmentation_models" icon="vector-square" href="https://github.com/qubvel/segmentation_models">
+    TensorFlow Keras version of the segmentation models toolkit. Same popular architectures (UNet, PSPNet) with pre-trained weights.
+  </Card>
+</Columns>
+
+<Note>
+  **Detectron (v1)** (`https://github.com/facebookresearch/Detectron`) is deprecated. It was written in Python 2 using Caffe2. Use Detectron2 instead.
+</Note>
+
+---
+
+## Face recognition and analysis
+
+<Columns cols={2}>
+  <Card title="face_recognition" icon="face-smile" href="https://github.com/ageitgey/face_recognition">
+    Simple face recognition library that recognizes and manipulates faces from Python or the command line. Built on dlib's deep learning face recognition model.
+  </Card>
+  <Card title="deepface" icon="id-card" href="https://github.com/serengil/deepface">
+    Lightweight face recognition and facial attribute analysis (age, gender, emotion, race) framework. Covers VGG-Face, FaceNet, OpenFace, DeepFace, DeepID, ArcFace.
+  </Card>
+  <Card title="retinaface" icon="eye" href="https://github.com/serengil/retinaface">
+    Deep learning-based facial detector for Python with facial landmark detection. Highly accurate for small and occluded faces.
+  </Card>
+  <Card title="OpenFace" icon="user" href="https://cmusatyalab.github.io/openface/">
+    Free and open-source face recognition with deep neural networks. CMU's system using FaceNet-style training.
+  </Card>
+</Columns>
+
+---
+
+## Data augmentation
+
+<Card title="albumentations" icon="wand-magic-sparkles" href="https://github.com/albu/albumentations">
+  Fast and framework-agnostic image augmentation library implementing a diverse set of techniques. Supports classification, segmentation, and detection out of the box. Widely used in Kaggle competitions.
+</Card>
+
+---
+
+## Pose estimation
+
+<Card title="OpenPose" icon="person" href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">
+  Real-time multi-person keypoint detection library for body, face, hands, and foot estimation. Developed by CMU Perceptual Computing Lab. Includes Python bindings.
+</Card>
+
+---
+
+## Self-supervised and contrastive learning
+
+<Columns cols={2}>
+  <Card title="lightly" icon="leaf" href="https://github.com/lightly-ai/lightly">
+    Computer vision framework for self-supervised learning. Implements SimCLR, MoCo, BYOL, and other contrastive methods for training on unlabeled images.
+  </Card>
+  <Card title="LightlyTrain" icon="dumbbell" href="https://github.com/lightly-ai/lightly-train">
+    Pre-train computer vision models on unlabeled data for industrial applications. Built on top of the lightly framework.
+  </Card>
+</Columns>
+
+<Card title="Learnergy" icon="atom" href="https://github.com/gugarosa/learnergy">
+  Energy-based machine learning models (Restricted Boltzmann Machines, Deep Belief Networks) built upon PyTorch for feature learning from image data.
+</Card>
+
+---
+
+## Neural style and generative vision
+
+<AccordionGroup>
+  <Accordion title="Style transfer and deep dream" icon="paintbrush">
+    | Library | Description |
+    |---|---|
+    | [neural-style-pt](https://github.com/ProGamerGov/neural-style-pt) | PyTorch implementation of Justin Johnson's neural-style algorithm. Renders images in the style of famous artworks. |
+    | [Lucent](https://github.com/greentfrapp/lucent) | Clarity/Lucid's feature visualization toolkit adapted for PyTorch. Visualize what neural networks have learned. |
+    | [neural-dream](https://github.com/ProGamerGov/neural-dream) | PyTorch implementation of DeepDream for generating dream-like images from neural network activations. |
+    | [TF-GAN](https://github.com/tensorflow/gan) | Lightweight TensorFlow library for training and evaluating Generative Adversarial Networks (GANs). |
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Apple Silicon
+
+<Card title="MLX" icon="apple" href="https://github.com/ml-explore/mlx">
+  Array framework for machine learning on Apple Silicon, developed by Apple ML Research. Supports lazy computation, automatic differentiation, and unified CPU/GPU memory. Optimized for M-series chips.
+</Card>
+
+---
+
+## Related pages
+
+- [Deep learning frameworks](/python/deep-learning) — PyTorch, TensorFlow, JAX
+- [General-purpose ML](/python/general-purpose) — scikit-learn, XGBoost
+- [Data analysis](/python/data-analysis) — NumPy, matplotlib, visualization

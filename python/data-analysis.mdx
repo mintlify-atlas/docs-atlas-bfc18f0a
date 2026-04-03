@@ -1,0 +1,167 @@
+---
+title: 'Data analysis and visualization'
+description: 'Python libraries for numerical computing, data manipulation, visualization, big data, graph analysis, feature engineering, and domain-specific data science.'
+keywords: ['numpy', 'pandas', 'matplotlib', 'scipy', 'bokeh', 'plotly', 'seaborn', 'networkx', 'statsmodels']
+---
+
+A curated reference of Python data analysis and visualization libraries sourced from the [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning) list.
+
+---
+
+## Core numerical computing
+
+<Columns cols={2}>
+  <Card title="NumPy" icon="calculator" href="https://www.numpy.org/">
+    Fundamental package for scientific computing with Python. Provides the N-dimensional array object, broadcasting, linear algebra, Fourier transforms, and random number capabilities.
+  </Card>
+  <Card title="SciPy" icon="flask" href="https://www.scipy.org/">
+    Python-based ecosystem of open-source software for mathematics, science, and engineering. Builds on NumPy to add optimization, integration, interpolation, signal processing, and statistics.
+  </Card>
+  <Card title="Pandas" icon="table" href="https://pandas.pydata.org/">
+    High-performance, easy-to-use data structures (DataFrame, Series) and data analysis tools. The standard library for tabular data manipulation in Python.
+  </Card>
+  <Card title="SymPy" icon="square-root-variable" href="https://github.com/sympy/sympy">
+    Python library for symbolic mathematics — algebra, calculus, equation solving, and code generation.
+  </Card>
+</Columns>
+
+---
+
+## Visualization
+
+<Columns cols={2}>
+  <Card title="matplotlib" icon="chart-bar" href="https://matplotlib.org/">
+    Python 2D plotting library. The foundation of most other Python visualization libraries. Highly customizable for publication-quality figures.
+  </Card>
+  <Card title="Seaborn" icon="chart-area" href="https://seaborn.pydata.org/">
+    Statistical data visualization built on matplotlib. Provides high-level interface for drawing attractive and informative statistical graphics.
+  </Card>
+  <Card title="bokeh" icon="circle-dot" href="https://github.com/bokeh/bokeh">
+    Interactive web plotting for Python. Creates interactive plots, dashboards, and data applications in modern browsers without JavaScript.
+  </Card>
+  <Card title="plotly" icon="chart-line" href="https://plot.ly/python/">
+    Collaborative web plotting for Python. Produces interactive figures for notebooks and web apps; also powers the Dash framework.
+  </Card>
+</Columns>
+
+<Columns cols={2}>
+  <Card title="altair" icon="pen-to-square" href="https://github.com/altair-viz/altair">
+    Declarative statistical visualization library based on Vega-Lite. Concise Python API that produces interactive charts from pandas DataFrames.
+  </Card>
+  <Card title="Dash" icon="gauge-high" href="https://github.com/plotly/dash">
+    Framework for creating analytical web applications built on Plotly.js, React, and Flask. Build interactive dashboards entirely in Python.
+  </Card>
+</Columns>
+
+---
+
+## Big data and performance
+
+<Columns cols={2}>
+  <Card title="Numba" icon="bolt" href="https://numba.pydata.org/">
+    Python JIT compiler to LLVM aimed at scientific Python. Accelerates NumPy-heavy code to near-C speeds with minimal code changes using the `@jit` decorator.
+  </Card>
+  <Card title="Mars" icon="server" href="https://github.com/mars-project/mars">
+    Tensor-based framework for large-scale data computation. A parallel and distributed version of NumPy/Pandas/Scikit-learn that scales to clusters.
+  </Card>
+  <Card title="Vaex" icon="database" href="https://github.com/vaexio/vaex">
+    High-performance Python library for lazy out-of-core DataFrames. Visualizes and explores big tabular datasets (billions of rows) without loading into memory.
+  </Card>
+</Columns>
+
+---
+
+## Statistical modelling
+
+<Columns cols={2}>
+  <Card title="statsmodels" icon="chart-column" href="https://github.com/statsmodels/statsmodels">
+    Statistical modelling and econometrics in Python. Covers linear models, time series analysis (ARIMA, VAR), generalized linear models, and hypothesis testing.
+  </Card>
+  <Card title="PyMC" icon="diagram-project" href="https://github.com/pymc-devs/pymc">
+    Markov Chain Monte Carlo sampling toolkit for Bayesian statistical modelling. See also [General-purpose ML](/python/general-purpose) for Bayesian inference context.
+  </Card>
+</Columns>
+
+---
+
+## Graph analysis
+
+<Columns cols={2}>
+  <Card title="NetworkX" icon="diagram-project" href="https://networkx.github.io/">
+    High-productivity software for the creation, manipulation, and study of complex networks. Includes algorithms for paths, connectivity, centrality, community detection, and more.
+  </Card>
+  <Card title="igraph" icon="circle-nodes" href="https://igraph.org/python/">
+    Python binding to the igraph C library. General-purpose graph library with a focus on performance for large graphs.
+  </Card>
+</Columns>
+
+---
+
+## Feature engineering
+
+<Columns cols={2}>
+  <Card title="Feature-engine" icon="gear" href="https://github.com/feature-engine/feature_engine">
+    Open-source library with a comprehensive battery of feature engineering and selection methods based on pandas and scikit-learn. Encoders, imputers, transformers, and selectors.
+  </Card>
+  <Card title="Featuretools" icon="wrench" href="https://github.com/featuretools/featuretools">
+    Automated feature engineering. Transforms transactional and relational datasets into feature matrices using reusable "primitives."
+  </Card>
+  <Card title="Upgini" icon="arrow-up" href="https://github.com/upgini/upgini">
+    Free automated data and feature enrichment library. Searches thousands of ready-to-use features from public and community data sources to improve model accuracy.
+  </Card>
+  <Card title="skrub" icon="broom" href="https://github.com/skrub-data/skrub">
+    Python library that eases preprocessing and feature engineering for ML on DataFrames. Handles dirty strings, dates, and joins with ML-aware encoders.
+  </Card>
+</Columns>
+
+---
+
+## Geospatial
+
+<Card title="Cartopy" icon="map" href="https://scitools.org.uk/cartopy/docs/latest/">
+  Python package for geospatial data processing. Produces maps and geospatial analyses with support for many projections and coordinate reference systems. Built on top of matplotlib.
+</Card>
+
+---
+
+## Astronomy and astrophysics
+
+<Columns cols={2}>
+  <Card title="astropy" icon="star" href="https://www.astropy.org/">
+    Community Python library for Astronomy. Coordinates, units, FITS I/O, cosmological calculations, and more.
+  </Card>
+  <Card title="astroML" icon="telescope" href="https://www.astroml.org/">
+    Machine learning and data mining for Astronomy. Tools for density estimation, model selection, time-series analysis, and classification of astronomical data.
+  </Card>
+</Columns>
+
+---
+
+## Finance
+
+<Card title="zipline" icon="dollar-sign" href="https://github.com/quantopian/zipline">
+  Pythonic algorithmic trading library. Powers Quantopian's backtesting engine. Provides event-driven architecture for simulating trading strategies with historical data.
+</Card>
+
+---
+
+## Clustering and exploratory analysis
+
+<AccordionGroup>
+  <Accordion title="Clustering and distance" icon="circle-nodes">
+    | Library | Description |
+    |---|---|
+    | [HDBScan](https://github.com/lmcinnes/hdbscan) | Implementation of the HDBSCAN clustering algorithm in Python. Finds clusters of varying density without requiring the number of clusters upfront. |
+    | [scikit-plot](https://github.com/reiinakano/scikit-plot) | Visualization library for quick and easy generation of common plots in data analysis and ML. |
+    | [PyCM](https://github.com/sepandhaghighi/pycm) | Multi-class confusion matrix library supporting a wide range of per-class and overall statistics. |
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Related pages
+
+- [General-purpose ML](/python/general-purpose) — scikit-learn, XGBoost, PyMC (Bayesian context)
+- [Deep learning frameworks](/python/deep-learning) — PyTorch, TensorFlow, JAX
+- [NLP libraries](/python/nlp) — Gensim, topic modelling, text preprocessing
+- [Computer vision](/python/computer-vision) — image processing, detection, segmentation

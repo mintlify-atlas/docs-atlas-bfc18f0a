@@ -1,0 +1,117 @@
+---
+title: 'JavaScript & TypeScript'
+description: 'ML libraries for JavaScript and TypeScript — covering general-purpose ML, NLP, data visualization, and browser-native inference.'
+keywords: ['javascript', 'typescript', 'machine learning', 'tensorflow.js', 'brain.js', 'nlp', 'browser ml']
+---
+
+JavaScript's ubiquity in both browser and server environments has produced a rich ecosystem of ML libraries. From GPU-accelerated deep learning in the browser to production NLP pipelines on Node.js, the options below cover the full spectrum.
+
+<Info>
+  For Python equivalents of many of these libraries, see the [Python general-purpose ML](/python/general-purpose) page.
+</Info>
+
+## General-purpose ML
+
+<Columns cols={2}>
+  <Card title="TensorFlow.js" icon="brain" href="https://js.tensorflow.org/">
+    WebGL-accelerated ML library for training and deploying models entirely in the browser or on Node.js.
+  </Card>
+  <Card title="Brain.js" icon="network-wired" href="https://github.com/BrainJS/brain.js">
+    Neural networks in JavaScript. A community-maintained fork of the original Brain library with GPU support.
+  </Card>
+  <Card title="ml5" icon="star" href="https://github.com/ml5js/ml5-library">
+    Friendly machine learning for the web, built on top of TensorFlow.js with a high-level API aimed at beginners and artists.
+  </Card>
+  <Card title="ml.js" icon="calculator" href="https://github.com/mljs/ml">
+    Machine learning and numerical analysis tools for Node.js and the browser, covering regression, clustering, and more.
+  </Card>
+  <Card title="Synaptic" icon="sitemap" href="https://github.com/cazala/synaptic">
+    Architecture-free neural network library for Node.js and the browser with support for multiple training algorithms.
+  </Card>
+  <Card title="machinelearn.js" icon="microchip" href="https://github.com/machinelearnjs/machinelearnjs">
+    ML library for the web and Node.js with a scikit-learn-inspired API covering classification, regression, and preprocessing.
+  </Card>
+</Columns>
+
+## Natural Language Processing
+
+<Columns cols={2}>
+  <Card title="natural" icon="comment-dots" href="https://github.com/NaturalNode/natural">
+    General NLP facilities for Node.js: tokenizing, stemming, classification, phonetics, tf-idf, and WordNet.
+  </Card>
+  <Card title="NLP Compromise" icon="language" href="https://github.com/spencermountain/compromise">
+    Lightweight natural language processing that runs entirely in the browser with a friendly chainable API.
+  </Card>
+  <Card title="nlp.js" icon="comments" href="https://github.com/axa-group/nlp.js">
+    NLP library built on Natural with entity extraction, sentiment analysis, and automatic language identification.
+  </Card>
+  <Card title="Retext" icon="align-left" href="https://github.com/retextjs/retext">
+    Extensible system for analyzing and manipulating natural language, built on the unified ecosystem.
+  </Card>
+</Columns>
+
+## Data analysis & visualization
+
+<Columns cols={2}>
+  <Card title="D3.js" icon="chart-bar" href="https://d3js.org/">
+    The canonical data-driven document library for bespoke, SVG-based visualizations in the browser.
+  </Card>
+  <Card title="Chart.js" icon="chart-line" href="https://www.chartjs.org/">
+    Simple, responsive chart library covering bar, line, pie, radar, polar, bubble, and scatter charts.
+  </Card>
+  <Card title="Plotly (JS)" icon="chart-area" href="https://plotly.com/javascript/">
+    Interactive charting library for scientific and financial data, with WebGL support for large datasets.
+  </Card>
+  <Card title="Sigma.js" icon="project-diagram" href="http://sigmajs.org/">
+    JavaScript library dedicated to graph drawing, capable of rendering large networks efficiently in the browser.
+  </Card>
+  <Card title="C3.js" icon="chart-pie" href="https://c3js.org/">
+    Customizable chart library built on D3.js that removes the need to write D3 directly.
+  </Card>
+  <Card title="amCharts" icon="bar-chart" href="https://www.amcharts.com/">
+    Full-featured charting and mapping library with a broad range of chart types and a JavaScript/TypeScript API.
+  </Card>
+</Columns>
+
+## Browser-native inference
+
+These libraries run model inference directly in the browser, using WebGL, WebGPU, or WebAssembly for acceleration.
+
+<Columns cols={2}>
+  <Card title="WebDNN" icon="bolt" href="https://github.com/mil-tokyo/webdnn">
+    Fast deep neural network JavaScript framework using WebGPU for GPU execution and WebAssembly for CPU execution.
+  </Card>
+  <Card title="WebNN" icon="globe" href="https://webnn.dev">
+    Web standard that allows web apps and frameworks to accelerate deep neural networks with on-device hardware (GPU, CPU, AI accelerators).
+  </Card>
+  <Card title="Keras.js" icon="fire" href="https://github.com/transcranial/keras-js">
+    Run Keras models in the browser with GPU support provided by WebGL 2. **[Deprecated]**
+  </Card>
+  <Card title="tensor-js" icon="code" href="https://github.com/Hoff97/tensorjs">
+    Deep learning library for the browser, accelerated by WebGL and WebAssembly.
+  </Card>
+  <Card title="Kandle" icon="cubes" href="https://github.com/final-kk/kandle">
+    JavaScript-native, PyTorch-aligned ML framework built from scratch on WebGPU.
+  </Card>
+</Columns>
+
+## Utilities & miscellaneous
+
+<Columns cols={2}>
+  <Card title="stdlib" icon="toolbox" href="https://github.com/stdlib-js/stdlib">
+    Standard library for JavaScript and Node.js with an emphasis on numeric computing: math, statistics, streams, and utilities.
+  </Card>
+  <Card title="simple-statistics" icon="sigma" href="https://github.com/simple-statistics/simple-statistics">
+    Descriptive, regression, and inference statistics implemented in dependency-free literate JavaScript.
+  </Card>
+  <Card title="Pipcook" icon="cogs" href="https://github.com/alibaba/pipcook">
+    JavaScript application framework by Alibaba for machine learning and its engineering, covering the full ML pipeline.
+  </Card>
+  <Card title="JSMLT" icon="robot" href="https://github.com/jsmlt/jsmlt">
+    Machine learning toolkit with classification and clustering for Node.js, with built-in visualization support.
+  </Card>
+</Columns>
+
+<Tip>
+  TensorFlow.js models are compatible with models trained in Python using the Keras API. Use `tensorflowjs_converter` to convert `.h5` or `SavedModel` files for browser deployment.
+</Tip>

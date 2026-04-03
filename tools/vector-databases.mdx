@@ -1,0 +1,76 @@
+---
+title: 'Vector databases and similarity search'
+description: 'Tools for storing, indexing, and querying high-dimensional vector embeddings — the foundation of semantic search, RAG pipelines, and recommendation systems.'
+keywords: ['vector database', 'similarity search', 'qdrant', 'milvus', 'weaviate', 'chroma', 'pinecone', 'faiss', 'annoy', 'embeddings']
+---
+
+Vector databases store high-dimensional embeddings and support efficient approximate nearest-neighbor (ANN) search. They are the backbone of retrieval-augmented generation (RAG) pipelines, semantic search, and recommendation systems.
+
+<Note>
+Vector databases differ from traditional databases in that queries are expressed as vectors — you search for items *similar* to a query embedding rather than items that match an exact value.
+</Note>
+
+## Managed and self-hosted vector databases
+
+<CardGroup cols={2}>
+  <Card title="Qdrant" icon="database" href="https://qdrant.tech">
+    Open-source vector similarity search engine with extended filtering support, written in Rust. Supports payload filtering alongside vector search, making it suitable for attribute-constrained retrieval. [Source code](https://github.com/qdrant/qdrant) available.
+  </Card>
+  <Card title="Milvus" icon="server" href="https://milvus.io">
+    Open-source vector database built for production AI, written in Go and C++. Designed to scale to billions of embedding vectors with fast ANN search. [Source code](https://github.com/milvus-io/milvus) available.
+  </Card>
+  <Card title="Weaviate" icon="circle-nodes" href="https://www.semi.technology/developers/weaviate/current/">
+    Open-source ML-native vector search engine and vector database. Uses machine learning to vectorize and store data and supports natural language queries. Bring your own models or use built-in vectorizers. [Source code](https://github.com/semi-technologies/weaviate) available.
+  </Card>
+  <Card title="Chroma" icon="circle" href="https://www.trychroma.com/">
+    Open-source embedding database for AI applications. Supports vector, full-text, regex, and metadata search. Available as a self-hosted deployment or managed cloud service.
+  </Card>
+  <Card title="Pinecone" icon="thumbtack" href="https://www.pinecone.io/">
+    Managed vector database designed for real-time, scalable vector embedding and similarity search. Fully managed service with no infrastructure to operate.
+  </Card>
+  <Card title="Infinity" icon="infinity" href="https://github.com/infiniflow/infinity">
+    AI-native database built for LLM applications, providing fast vector and full-text search. Developed using C++20 for high performance and low latency.
+  </Card>
+</CardGroup>
+
+## Semantic search pipelines
+
+<CardGroup cols={2}>
+  <Card title="txtai" icon="magnifying-glass" href="https://github.com/neuml/txtai">
+    Build semantic search applications and workflows. Provides an all-in-one pipeline that combines embeddings, vector search, language model summarization, and zero-shot classification into composable workflows.
+  </Card>
+</CardGroup>
+
+## Libraries for approximate nearest-neighbor search
+
+These libraries implement ANN algorithms and are commonly embedded inside applications or used as the search layer behind a vector database.
+
+<CardGroup cols={2}>
+  <Card title="Annoy (Spotify)" icon="music" href="https://github.com/spotify/annoy">
+    Approximate nearest-neighbor implementation from Spotify. Uses random projection trees to build an index that supports fast memory-mapped lookups. Widely used for recommendation systems.
+  </Card>
+  <Card title="FAISS (Facebook)" icon="facebook" href="https://github.com/facebookresearch/faiss">
+    Library from Facebook AI Research for efficient similarity search and clustering of dense vectors. Supports both CPU and GPU and is optimized for billion-scale datasets.
+  </Card>
+</CardGroup>
+
+<Tip>
+FAISS and Annoy are libraries, not servers — they run in-process. If you need persistence, multi-tenancy, filtering, or a network API, use a dedicated vector database like Qdrant, Milvus, or Weaviate on top of them (or instead of them).
+</Tip>
+
+## Choosing a vector database
+
+| Tool | Deployment | Language | Filtering | Scale |
+|---|---|---|---|---|
+| Qdrant | Self-hosted / Cloud | Rust | Extended payload filtering | Medium–large |
+| Milvus | Self-hosted / Cloud | Go + C++ | Scalar filtering | Billions of vectors |
+| Weaviate | Self-hosted / Cloud | Go | GraphQL + vector hybrid | Medium–large |
+| Chroma | Self-hosted / Cloud | Python | Metadata filtering | Small–medium |
+| Pinecone | Managed only | — | Metadata filtering | Large |
+| Infinity | Self-hosted | C++20 | Full-text + vector | Medium–large |
+
+## Related pages
+
+- [LLM tooling](/tools/llm-tooling)
+- [Model serving and deployment](/tools/model-serving-deployment)
+- [Python general-purpose ML](/python/general-purpose)

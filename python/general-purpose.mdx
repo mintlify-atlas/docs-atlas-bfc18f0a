@@ -1,0 +1,191 @@
+---
+title: 'General-purpose ML libraries'
+description: 'Python libraries for classical machine learning, AutoML, Bayesian inference, time series, optimization, and model monitoring.'
+keywords: ['scikit-learn', 'xgboost', 'catboost', 'lightgbm', 'automl', 'bayesian', 'time series', 'optuna']
+---
+
+A curated reference of Python general-purpose machine learning libraries sourced from the [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning) list.
+
+For deep learning frameworks (PyTorch, TensorFlow, JAX), see [Deep learning](/python/deep-learning).
+
+---
+
+## Core frameworks
+
+<Columns cols={2}>
+  <Card title="scikit-learn" icon="python" href="https://scikit-learn.org/">
+    The standard Python ML toolkit built on top of SciPy. Covers classification, regression, clustering, dimensionality reduction, model selection, and preprocessing with a consistent API.
+  </Card>
+  <Card title="XGBoost" icon="bolt" href="https://github.com/dmlc/xgboost">
+    Parallelized optimized general-purpose gradient boosting library. Widely used in tabular ML competitions and production systems.
+  </Card>
+  <Card title="CatBoost" icon="bolt" href="https://github.com/catboost/catboost">
+    Gradient boosting on decision trees with native categorical feature support. Easy to install; supports CPU and multi-GPU computation.
+  </Card>
+  <Card title="LightGBM" icon="bolt" href="https://github.com/Microsoft/LightGBM">
+    Microsoft's fast, distributed, high-performance GBDT framework. Excels at ranking, classification, and other tasks on large datasets.
+  </Card>
+</Columns>
+
+---
+
+## AutoML
+
+<AccordionGroup>
+  <Accordion title="AutoML libraries" icon="wand-magic-sparkles">
+    | Library | Description |
+    |---|---|
+    | [TPOT](https://github.com/EpistasisLab/tpot) | Automatically creates and optimizes ML pipelines using genetic programming. Acts as a personal data science assistant. |
+    | [AutoGluon](https://github.com/awslabs/autogluon) | AWS AutoML for Image, Text, Tabular, Time-Series, and MultiModal data. |
+    | [PyCaret](https://github.com/pycaret/pycaret) | Open-source low-code ML library that automates end-to-end machine learning workflows. |
+    | [mljar-supervised](https://github.com/mljar/mljar-supervised) | AutoML for tabular data: binary/multiclass classification and regression, with markdown reports and explainability. |
+    | [FEDOT](https://github.com/nccr-itmo/FEDOT) | AutoML framework for automated design of composite modelling pipelines across classification, regression, and time series. |
+    | [auto_ml](https://github.com/ClimbsRocks/auto_ml) | AutoML for production and analytics with support for NLP, XGBoost, CatBoost, and LightGBM. |
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Bayesian inference and probabilistic programming
+
+<Columns cols={2}>
+  <Card title="PyMC" icon="chart-line" href="https://github.com/pymc-devs/pymc">
+    Markov Chain Monte Carlo (MCMC) sampling toolkit for Bayesian statistical modelling.
+  </Card>
+  <Card title="pomegranate" icon="diagram-project" href="https://github.com/jmschrei/pomegranate">
+    Hidden Markov Models and probabilistic graphical models for Python, implemented in Cython for speed.
+  </Card>
+  <Card title="pgmpy" icon="diagram-project" href="https://github.com/pgmpy/pgmpy">
+    Python library for working with Probabilistic Graphical Models — structure learning, parameter estimation, and inference.
+  </Card>
+</Columns>
+
+---
+
+## Ensemble and imbalanced learning
+
+<AccordionGroup>
+  <Accordion title="Ensemble methods" icon="layer-group">
+    | Library | Description |
+    |---|---|
+    | [mlens](https://github.com/flennerhag/mlens) | High-performance, memory-efficient, parallelized ensemble learning integrated with scikit-learn. |
+    | [imbalanced-learn](https://imbalanced-learn.org/stable/) | Under-sampling and over-sampling with various techniques (SMOTE, ADASYN, etc.) for class-imbalanced datasets. |
+    | [imbalanced-ensemble](https://github.com/ZhiningLiu1998/imbalanced-ensemble) | Python toolbox for ensemble learning on class-imbalanced data with built-in visualization. |
+    | [Shapley](https://github.com/benedekrozemberczki/shapley) | Data-driven framework to quantify the value of classifiers in a machine learning ensemble using Shapley values. |
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Time series
+
+<Columns cols={2}>
+  <Card title="sktime" icon="clock" href="https://github.com/alan-turing-institute/sktime">
+    Unified framework for machine learning with time series — classification, regression, clustering, and forecasting with a scikit-learn compatible API.
+  </Card>
+  <Card title="skforecast" icon="chart-line" href="https://github.com/skforecast/skforecast">
+    Time series forecasting using any scikit-learn-compatible regressor, including LightGBM, XGBoost, CatBoost, and Keras.
+  </Card>
+  <Card title="prophet" icon="calendar" href="https://facebook.github.io/prophet/">
+    Fast automated time series forecasting framework by Facebook. Handles seasonality, holidays, and trend changes with minimal configuration.
+  </Card>
+  <Card title="dtaidistance" icon="ruler" href="https://github.com/wannesm/dtaidistance">
+    High-performance library for time series distances (DTW) and time series clustering.
+  </Card>
+</Columns>
+
+---
+
+## Hyperparameter optimization
+
+<Columns cols={2}>
+  <Card title="Optuna" icon="sliders" href="https://github.com/optuna/optuna">
+    Automatic hyperparameter optimization framework with a clean API, pruning, and parallelism support. Particularly designed for machine learning.
+  </Card>
+  <Card title="bayeso" icon="brain" href="https://github.com/jungtaekkim/bayeso">
+    Simple but essential Bayesian optimization package with support for common kernels and acquisition functions.
+  </Card>
+  <Card title="Opytimizer" icon="magnifying-glass" href="https://github.com/gugarosa/opytimizer">
+    Python-based meta-heuristic optimization techniques including swarm intelligence and evolutionary algorithms.
+  </Card>
+  <Card title="Optunity" icon="sliders" href="https://optunity.readthedocs.io/en/latest/">
+    Library for automated hyperparameter optimization; drop-in replacement for grid search with a lightweight API.
+  </Card>
+</Columns>
+
+---
+
+## Model monitoring and data quality
+
+<Columns cols={2}>
+  <Card title="Evidently" icon="chart-bar" href="https://github.com/evidentlyai/evidently">
+    Interactive reports to analyze ML models during validation or production monitoring. Detects data drift, model degradation, and data quality issues.
+  </Card>
+  <Card title="Deepchecks" icon="shield-check" href="https://github.com/deepchecks/deepchecks">
+    Validation and testing of ML models and data during development, deployment, and production — covering performance, integrity, and distribution.
+  </Card>
+  <Card title="NannyML" icon="bell" href="https://bit.ly/nannyml-github-machinelearning">
+    Python library for estimating post-deployment model performance without access to ground-truth targets. Captures data drift impact on performance.
+  </Card>
+  <Card title="cleanlab" icon="broom" href="https://github.com/cleanlab/cleanlab">
+    Standard data-centric AI package for data quality and ML with messy, real-world labels. Finds and fixes label errors automatically.
+  </Card>
+</Columns>
+
+---
+
+## Graph and network ML
+
+<AccordionGroup>
+  <Accordion title="Graph learning libraries" icon="diagram-project">
+    | Library | Description |
+    |---|---|
+    | [PyTorch Geometric](https://github.com/pyg-team/pytorch_geometric) | Graph Neural Network library for PyTorch, covering message passing, pooling, and datasets for graph-structured data. |
+    | [PyTorch Geometric Temporal](https://github.com/benedekrozemberczki/pytorch_geometric_temporal) | Temporal extension of PyTorch Geometric for dynamic graph representation learning. |
+    | [Karate Club](https://github.com/benedekrozemberczki/karateclub) | Unsupervised ML extension library for NetworkX with a scikit-learn like API. |
+    | [StellarGraph](https://github.com/stellargraph/stellargraph) | Machine learning on graph-structured (network-structured) data. |
+    | [Little Ball of Fur](https://github.com/benedekrozemberczki/littleballoffur) | Graph sampling extension library for NetworkX. |
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Miscellaneous utilities
+
+<AccordionGroup>
+  <Accordion title="Explainability and interpretability" icon="magnifying-glass">
+    | Library | Description |
+    |---|---|
+    | [InterpretML](https://github.com/interpretml/interpret) | Implements Explainable Boosting Machine (EBM) and visualization tools for glass-box and black-box models. |
+    | [Shapash](https://github.com/MAIF/shapash) | Visualization library displaying explicit labels for model explanations that non-experts can understand. |
+    | [lime](https://github.com/marcotcr/lime) | Model-agnostic explanation of black-box classifiers. Works for any model with two or more classes. |
+  </Accordion>
+  <Accordion title="Recommender systems" icon="star">
+    | Library | Description |
+    |---|---|
+    | [Surprise](https://surpriselib.com) | Scikit-inspired library for building and analyzing recommender systems. |
+    | [implicit](https://implicit.readthedocs.io/en/latest/quickstart.html) | Fast collaborative filtering for implicit datasets (ALS, BPR, LMF). |
+    | [LightFM](https://making.lyst.com/lightfm/docs/home.html) | Popular recommendation algorithms for both implicit and explicit feedback. |
+    | [Cornac](https://github.com/PreferredAI/cornac) | Comparative framework for multimodal recommender systems leveraging auxiliary data. |
+  </Accordion>
+  <Accordion title="Online and stream learning" icon="water">
+    | Library | Description |
+    |---|---|
+    | [River](https://github.com/online-ml/river) | Framework for general purpose online machine learning, where models learn one sample at a time. |
+    | [scikit-multiflow](https://github.com/scikit-multiflow/scikit-multiflow) | ML framework for multi-output/multi-label and stream data. |
+  </Accordion>
+  <Accordion title="Outlier detection" icon="triangle-exclamation">
+    | Library | Description |
+    |---|---|
+    | [PyOD](https://github.com/yzhao062/pyod) | Comprehensive Python toolkit for detecting outlying objects in multivariate data, including neural network-based methods. |
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Related pages
+
+- [Deep learning frameworks](/python/deep-learning) — PyTorch, TensorFlow, JAX, Hugging Face
+- [NLP libraries](/python/nlp) — spaCy, NLTK, Transformers
+- [Data analysis and visualization](/python/data-analysis) — NumPy, Pandas, matplotlib
+- [Computer vision](/python/computer-vision) — OpenCV, Detectron2, timm

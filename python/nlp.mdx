@@ -1,0 +1,149 @@
+---
+title: 'NLP libraries'
+description: 'Python natural language processing libraries for text analysis, topic modelling, string matching, translation, and LLM tooling.'
+keywords: ['spacy', 'nltk', 'transformers', 'gensim', 'rasa', 'nlp', 'text processing', 'hugging face']
+---
+
+A curated reference of Python NLP libraries sourced from the [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning) list.
+
+---
+
+## Core NLP toolkits
+
+<Columns cols={2}>
+  <Card title="spaCy" icon="language" href="https://github.com/explosion/spaCy">
+    Industrial-strength NLP with Python and Cython. Fast tokenization, POS tagging, NER, dependency parsing, and word vectors. Production-ready.
+  </Card>
+  <Card title="NLTK" icon="book" href="https://www.nltk.org/">
+    Leading platform for building Python programs that work with human language data. Includes corpora, tokenizers, stemmers, parsers, and classifiers.
+  </Card>
+  <Card title="TextBlob" icon="comment" href="http://textblob.readthedocs.io/en/dev/">
+    Consistent API for common NLP tasks including sentiment analysis, noun phrase extraction, translation, and spelling correction. Built on NLTK and Pattern.
+  </Card>
+  <Card title="Polyglot" icon="globe" href="https://github.com/aboSamoor/polyglot">
+    Multilingual text (NLP) processing toolkit. Supports tokenization, NER, POS tagging, and language detection across 130+ languages.
+  </Card>
+</Columns>
+
+---
+
+## Transformers and LLMs
+
+<Columns cols={2}>
+  <Card title="Transformers (Hugging Face)" icon="robot" href="https://github.com/huggingface/transformers">
+    Deep learning library with thousands of pre-trained models for NLP (and vision/audio). The standard library for anything related to Large Language Models — BERT, GPT, T5, LLaMA, and more.
+  </Card>
+  <Card title="Haystack" icon="magnifying-glass" href="https://github.com/deepset-ai/haystack">
+    Framework for building industrial-strength applications with Transformer models and LLMs. Powers RAG pipelines, QA systems, and document search.
+  </Card>
+</Columns>
+
+<Card title="CometLLM" icon="chart-bar" href="https://github.com/comet-ml/comet-llm">
+  Track, log, visualize, and evaluate your LLM prompts and prompt chains across experiments.
+</Card>
+
+---
+
+## Dialogue and intent systems
+
+<Columns cols={2}>
+  <Card title="Rasa" icon="comments" href="https://github.com/RasaHQ/rasa">
+    Machine learning framework to automate text- and voice-based conversations. Used for building contextual AI assistants and chatbots.
+  </Card>
+  <Card title="Snips NLU" icon="brain" href="https://github.com/snipsco/snips-nlu">
+    Natural Language Understanding library for intent classification and entity extraction. Runs fully on-device without cloud dependencies.
+  </Card>
+</Columns>
+
+<Card title="DrQA" icon="question" href="https://github.com/facebookresearch/DrQA">
+  Facebook Research's system for reading Wikipedia to answer open-domain questions. Combines a document retriever with a machine reading comprehension model.
+</Card>
+
+---
+
+## Topic modelling
+
+<AccordionGroup>
+  <Accordion title="Topic modelling libraries" icon="diagram-project">
+    | Library | Description |
+    |---|---|
+    | [Gensim](https://github.com/RaRe-Technologies/gensim) | Topic modelling for humans. Implements LDA, LSI, word2vec, and doc2vec efficiently for large corpora. |
+    | [BigARTM](https://github.com/bigartm/bigartm) | Fast topic modelling platform based on Additive Regularization of Topic Models (ARTM). Scales to billions of tokens. |
+    | [tweetopic](https://centre-for-humanities-computing.github.io/tweetopic/) | Blazing fast short-text topic modelling for Python. Designed for social media text. |
+    | [topicwizard](https://github.com/x-tabdeveloping/topic-wizard) | Interactive topic model visualization and interpretation framework. |
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## String matching and distance
+
+<Columns cols={2}>
+  <Card title="FuzzyWuzzy" icon="spell-check" href="https://github.com/seatgeek/fuzzywuzzy">
+    Fuzzy string matching in Python using Levenshtein distance. Useful for deduplication, record linkage, and search.
+  </Card>
+  <Card title="Neofuzz" icon="bolt" href="https://github.com/x-tabdeveloping/neofuzz">
+    Blazing fast, lightweight, and customizable fuzzy and semantic text search. FuzzyWuzzy/thefuzz compatible API.
+  </Card>
+  <Card title="jellyfish" icon="fish" href="https://github.com/jamesturk/jellyfish">
+    Python library for approximate and phonetic matching of strings. Implements Jaro-Winkler, NYSIIS, Metaphone, and more.
+  </Card>
+  <Card title="editdistance" icon="ruler" href="https://pypi.org/project/editdistance/">
+    Fast implementation of edit distance (Levenshtein distance) in Python. C extension for performance.
+  </Card>
+</Columns>
+
+---
+
+## Chinese NLP
+
+<AccordionGroup>
+  <Accordion title="Chinese language processing" icon="language">
+    | Library | Description |
+    |---|---|
+    | [jieba](https://github.com/fxsjy/jieba) | Most popular Chinese word segmentation utility for Python. Fast, accurate, and supports custom dictionaries. |
+    | [pkuseg-python](https://github.com/lancopku/pkuseg-python) | A higher-accuracy Chinese word segmentation toolkit developed by Peking University. |
+    | [SnowNLP](https://github.com/isnowfy/snownlp) | Library for processing Chinese text: segmentation, POS tagging, sentiment analysis, text summarization, and more. |
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Translation
+
+<Card title="DL Translate" icon="language" href="https://github.com/xhlulu/dl-translate">
+  Deep learning-based translation library between 50 languages, built on Hugging Face `transformers`. Simple API: `tl.translate("text", to="fr")`.
+</Card>
+
+---
+
+## Other utilities
+
+<AccordionGroup>
+  <Accordion title="Named entity recognition" icon="tag">
+    | Library | Description |
+    |---|---|
+    | [NeuroNER](https://github.com/Franck-Dernoncourt/NeuroNER) | Named-entity recognition using neural networks, providing state-of-the-art results on standard benchmarks. |
+    | [DeepPavlov](https://github.com/deepmipt/DeepPavlov/) | Conversational AI library with many pre-trained Russian NLP models and a component-based architecture. |
+  </Accordion>
+  <Accordion title="Text preprocessing" icon="scissors">
+    | Library | Description |
+    |---|---|
+    | [textacy](https://github.com/chartbeat-labs/textacy) | Higher-level NLP tasks built on top of spaCy: coreference, SBERT embeddings, readability metrics, and more. |
+    | [Pattern](https://github.com/clips/pattern) | Web mining module with NLP tools: part-of-speech tagger, sentiment analyzer, WordNet integration. |
+    | [Dedupe](https://github.com/dedupeio/dedupe) | Python library for accurate and scalable fuzzy matching, record deduplication, and entity resolution. |
+  </Accordion>
+  <Accordion title="Korean NLP" icon="language">
+    | Library | Description |
+    |---|---|
+    | [KoNLPy](http://konlpy.org) | Python package for Korean NLP. Wraps five major Korean morphological analyzers. |
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Related pages
+
+- [Deep learning frameworks](/python/deep-learning) — Transformers, PyTorch, TensorFlow
+- [General-purpose ML](/python/general-purpose) — scikit-learn, AutoML
+- [Data analysis](/python/data-analysis) — pandas, visualization

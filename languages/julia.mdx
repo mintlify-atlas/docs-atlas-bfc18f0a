@@ -1,0 +1,108 @@
+---
+title: 'Julia'
+description: 'ML libraries for Julia — covering general-purpose ML, deep learning, NLP, data analysis, clustering, and optimization.'
+keywords: ['julia', 'flux', 'mlj', 'knet', 'machine learning', 'scientific computing', 'deep learning']
+---
+
+Julia combines Python-level expressiveness with C-level performance, making it a natural fit for computationally intensive ML workloads. Its ecosystem has grown substantially since 2018, with mature frameworks for deep learning, probabilistic programming, and large-scale data manipulation.
+
+<Info>
+  Julia packages often have Python interop via [PythonCall.jl](https://github.com/cjdoris/PythonCall.jl). For Python ML tools, see the [Python general-purpose ML](/python/general-purpose) page.
+</Info>
+
+## General-purpose ML
+
+<Columns cols={2}>
+  <Card title="MLJ.jl" icon="robot" href="https://github.com/alan-turing-institute/MLJ.jl">
+    A Julia machine learning framework from the Alan Turing Institute — composable, model-agnostic, with a scikit-learn-style API.
+  </Card>
+  <Card title="Flux.jl" icon="bolt" href="https://fluxml.ai/">
+    The primary Julia deep learning library. Relax! Flux is the ML library that doesn't make you tensor.
+  </Card>
+  <Card title="Knet.jl" icon="graduation-cap" href="https://github.com/denizyuret/Knet.jl">
+    Koç University deep learning framework with a define-by-run approach, supporting automatic differentiation and GPU acceleration.
+  </Card>
+  <Card title="ScikitLearn.jl" icon="flask" href="https://github.com/cstjean/ScikitLearn.jl">
+    Julia implementation of the scikit-learn API, allowing use of Python's scikit-learn and Julia models interchangeably.
+  </Card>
+  <Card title="MLBase.jl" icon="toolbox" href="https://github.com/JuliaStats/MLBase.jl">
+    A set of foundational functions to support the development of machine learning algorithms in Julia.
+  </Card>
+  <Card title="XGBoost.jl" icon="tree" href="https://github.com/dmlc/XGBoost.jl">
+    eXtreme Gradient Boosting package in Julia, wrapping the highly optimized XGBoost C++ library.
+  </Card>
+</Columns>
+
+### Deep learning
+
+<Columns cols={2}>
+  <Card title="Mocha.jl" icon="coffee" href="https://github.com/pluskid/Mocha.jl">
+    Deep learning framework for Julia inspired by Caffe. **[Deprecated]**
+  </Card>
+  <Card title="Merlin.jl" icon="wand-magic-sparkles" href="https://github.com/hshindo/Merlin.jl">
+    Flexible deep learning framework in Julia with a define-by-run computation graph.
+  </Card>
+  <Card title="MXNet (Julia)" icon="network-wired" href="https://github.com/apache/incubator-mxnet">
+    Lightweight, portable, flexible distributed/mobile deep learning; Julia is one of the officially supported language bindings.
+  </Card>
+</Columns>
+
+## NLP
+
+<Columns cols={2}>
+  <Card title="TextAnalysis.jl" icon="file-alt" href="https://github.com/JuliaText/TextAnalysis.jl">
+    Julia package for text analysis: document-term matrices, TF-IDF, latent semantic analysis, and sentiment analysis.
+  </Card>
+  <Card title="WordTokenizers.jl" icon="cut" href="https://github.com/JuliaText/WordTokenizers.jl">
+    Tokenizers for natural language processing in Julia, covering word and sentence tokenization.
+  </Card>
+  <Card title="Embeddings.jl" icon="cubes" href="https://github.com/JuliaText/Embeddings.jl">
+    Functions and data dependencies for loading pre-trained word embeddings (GloVe, FastText, Word2Vec) in Julia.
+  </Card>
+  <Card title="Languages.jl" icon="globe" href="https://github.com/JuliaText/Languages.jl">
+    Julia package for working with various human languages: ISO codes, names, and basic classification.
+  </Card>
+</Columns>
+
+## Data analysis & visualization
+
+<Columns cols={2}>
+  <Card title="DataFrames.jl" icon="table" href="https://github.com/JuliaData/DataFrames.jl">
+    Library for working with tabular data in Julia, analogous to pandas in Python or data.frame in R.
+  </Card>
+  <Card title="Distributions.jl" icon="chart-bell" href="https://github.com/JuliaStats/Distributions.jl">
+    Julia package for probability distributions and associated functions: PDFs, CDFs, sampling, and moment computations.
+  </Card>
+  <Card title="TimeSeries.jl" icon="clock" href="https://github.com/JuliaStats/TimeSeries.jl">
+    Time series toolkit for Julia: temporal data containers, operations, and I/O.
+  </Card>
+  <Card title="Gadfly.jl" icon="chart-area" href="https://github.com/GiovineItalia/Gadfly.jl">
+    Crafty statistical graphics for Julia, inspired by ggplot2 and the Grammar of Graphics.
+  </Card>
+</Columns>
+
+## Clustering
+
+<Columns cols={2}>
+  <Card title="Clustering.jl" icon="object-group" href="https://github.com/JuliaStats/Clustering.jl">
+    Basic functions for clustering data in Julia: K-means, K-medoids, DBSCAN, hierarchical clustering, and more.
+  </Card>
+  <Card title="GaussianMixtures.jl" icon="circle-nodes" href="https://github.com/davidavdav/GaussianMixtures.jl">
+    Large-scale Gaussian Mixture Models in Julia, with support for diagonal and full covariance matrices.
+  </Card>
+</Columns>
+
+## Optimization
+
+<Columns cols={2}>
+  <Card title="CluGen.jl" icon="asterisk" href="https://github.com/clugen/CluGen.jl/">
+    Multidimensional cluster generation in Julia using parameterized line segments with statistical distributions.
+  </Card>
+  <Card title="MultivariateStats.jl" icon="arrows-alt" href="https://github.com/JuliaStats/MultivariateStats.jl">
+    Methods for dimensionality reduction in Julia: PCA, kernel PCA, ICA, LDA, CCA, and more.
+  </Card>
+</Columns>
+
+<Tip>
+  Julia's `Pkg` manager supports environments: use `julia --project=.` to activate a project-local environment, keeping dependencies isolated per project.
+</Tip>

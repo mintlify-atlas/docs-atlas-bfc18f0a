@@ -1,0 +1,136 @@
+---
+title: 'LLM and GenAI tooling'
+description: 'Tools for evaluating, tracing, observing, securing, and deploying large language models and generative AI applications.'
+keywords: ['llm', 'genai', 'evaluation', 'tracing', 'observability', 'agents', 'rag', 'opik', 'promptfoo', 'praisonai', 'langgraph']
+---
+
+The LLM tooling ecosystem covers evaluation and tracing, production observability, agent frameworks, security scanning, and platforms for building and deploying generative AI applications.
+
+<Note>
+This space evolves rapidly. Many tools listed here were added to the Awesome Machine Learning repository within the last year. Check each project's repository for current maintenance status.
+</Note>
+
+## Evaluation and tracing
+
+Evaluation tools let you test prompts, models, and pipelines systematically — including adversarial testing and automated red-teaming.
+
+<CardGroup cols={2}>
+  <Card title="Opik (Comet)" icon="flask" href="https://www.comet.com/site/products/opik/">
+    Open-source engineering platform to debug, evaluate, and monitor LLM applications, RAG systems, and agentic workflows. Provides comprehensive tracing, automated evaluations, and production-ready dashboards. [Source code](https://github.com/comet-ml/opik) available.
+  </Card>
+  <Card title="CometLLM" icon="chart-bar" href="https://github.com/comet-ml/comet-llm">
+    Track, log, visualize, and evaluate your LLM prompts and prompt chains. Part of the Comet MLOps platform; integrates with CometML experiment tracking.
+  </Card>
+  <Card title="promptfoo" icon="shield-halved" href="https://github.com/promptfoo/promptfoo">
+    Open-source LLM evaluation and red-teaming framework. Test prompts, models, agents, and RAG pipelines. Run adversarial attacks (jailbreaks, prompt injection) and integrate security testing into CI/CD pipelines.
+  </Card>
+  <Card title="Phoenix (Arize)" icon="fire" href="https://phoenix.arize.com">
+    Uncover insights, surface problems, and monitor and fine-tune generative LLM, computer vision, and tabular models. Part of the Arize AI observability platform.
+  </Card>
+</CardGroup>
+
+## Observability
+
+Observability platforms provide monitoring, analytics, and governance for LLM and ML applications running in production.
+
+<CardGroup cols={2}>
+  <Card title="Humanloop" icon="users" href="https://humanloop.com">
+    Platform for prompt experimentation, fine-tuning models for better performance, cost optimization, and collecting model-generated data and user feedback.
+  </Card>
+  <Card title="Fiddler AI" icon="gauge" href="https://www.fiddler.ai">
+    All-in-one AI observability and security platform for responsible AI. Provides monitoring, analytics, and centralized controls to operationalize ML, GenAI, and LLM applications. Helps enterprises scale LLM and ML deployments while managing governance.
+  </Card>
+  <Card title="Maxim AI" icon="chart-line" href="https://getmaxim.ai">
+    Agent simulation, evaluation, and observability platform for product teams shipping AI applications. Covers quality assurance and real-world performance tracking.
+  </Card>
+</CardGroup>
+
+## Agent frameworks
+
+Agent frameworks provide the scaffolding for building multi-step, tool-using, or multi-agent AI systems.
+
+<CardGroup cols={2}>
+  <Card title="PraisonAI" icon="robot" href="https://github.com/MervinPraison/PraisonAI">
+    Production-ready multi-AI agents framework with self-reflection. Claims 3.77μs agent instantiation, supports 100+ LLMs via LiteLLM, includes MCP integration, agentic workflows (route/parallel/loop/repeat), built-in memory, and Python and JavaScript SDKs.
+  </Card>
+  <Card title="Agentfield" icon="network-wired" href="https://github.com/Agent-Field/agentfield">
+    Open-source Kubernetes-style control plane for deploying AI agents as distributed microservices. Provides built-in service discovery, durable workflows, and observability for agent systems.
+  </Card>
+  <Card title="Agentic Signal" icon="diagram-project" href="https://github.com/code-forge-temple/agentic-signal">
+    Visual AI agent workflow automation platform with local LLM integration. Build intelligent workflows using drag-and-drop without requiring cloud services.
+  </Card>
+  <Card title="HyperAgency" icon="gears" href="https://github.com/vuics/h9y">
+    Agentic AI operating system that replaces brittle automations with long-lived, self-improving systems. Open-source, supports self-hosted and cloud deployments, visual workflow, omni-channel, and extensible architecture.
+  </Card>
+</CardGroup>
+
+<Tip>
+For scanning agent codebases for security vulnerabilities — including LangGraph, CrewAI, and n8n workflows — see the [Security](#security) section below.
+</Tip>
+
+## Security
+
+<CardGroup cols={2}>
+  <Card title="Agentic Radar" icon="radar" href="https://github.com/splx-ai/agentic-radar">
+    Open-source CLI security scanner for agentic workflows. Scans workflow source code, detects vulnerabilities, and generates an interactive visualization with a detailed security report. Supports LangGraph, CrewAI, n8n, OpenAI Agents, and more.
+  </Card>
+  <Card title="ClawMoat" icon="shield" href="https://github.com/darfaz/clawmoat">
+    Open-source runtime security scanner for AI agents. Detects prompt injection, jailbreak attempts, PII leakage, memory poisoning, and tool misuse. Zero dependencies, MIT licensed.
+  </Card>
+</CardGroup>
+
+## Platforms and research environments
+
+<CardGroup cols={2}>
+  <Card title="Synthical" icon="microscope" href="https://synthical.com">
+    AI-powered collaborative research environment. Provides article recommendations based on reading history, paper simplification, trend discovery, semantic search, folder sharing, and institutional publication lists.
+  </Card>
+  <Card title="MLReef" icon="code-branch" href="https://about.mlreef.com/">
+    End-to-end ML development platform using Git to provide structure and deep collaboration to the ML development process.
+  </Card>
+</CardGroup>
+
+## LLM dataset tools
+
+<CardGroup cols={2}>
+  <Card title="Ambrosia" icon="broom" href="https://github.com/reactorsh/ambrosia">
+    Helps clean up LLM training datasets using other LLMs. Automates data quality improvement by leveraging language models to identify and fix issues in text datasets.
+  </Card>
+</CardGroup>
+
+## Local LLMs
+
+Tools for running large language models locally without cloud API dependencies.
+
+<CardGroup cols={2}>
+  <Card title="Localforge" icon="house" href="https://localforge.dev/">
+    Open-source on-premises AI coding autonomous assistant that lives inside your repository. Edits and tests files at SSD speed. Supports OpenAI, Gemini, Ollama, and other LLM backends. [Source code](https://github.com/rockbite/localforge) available.
+  </Card>
+  <Card title="NobodyWho" icon="terminal" href="https://github.com/nobodywho-ooo/nobodywho">
+    The simplest way to run an LLM locally. Supports tool calling and grammar-constrained sampling.
+  </Card>
+</CardGroup>
+
+## Discovery and general utilities
+
+<CardGroup cols={2}>
+  <Card title="Teachable Machine" icon="graduation-cap" href="https://teachablemachine.withgoogle.com/">
+    Train ML models in the browser to recognize your own images, sounds, and poses — no coding required. Useful for prototyping and education.
+  </Card>
+  <Card title="Pollinations.AI" icon="image" href="https://pollinations.ai">
+    Free, no-signup APIs for text, image, and audio generation with no API keys required. Offers OpenAI-compatible interfaces and React hooks for easy integration into web applications.
+  </Card>
+  <Card title="CatalyzeX" icon="puzzle-piece" href="https://chrome.google.com/webstore/detail/code-finder-for-research/aikkeehnlfpamidigaffhfmgbkdeheil">
+    Browser extension (Chrome and Firefox) that automatically finds and shows code implementations for ML research papers across Google, Twitter, Arxiv, Scholar, and more.
+  </Card>
+  <Card title="Model Zoo" icon="box-archive" href="https://modelzoo.co/">
+    Discover open-source deep learning code and pretrained models across a wide range of tasks and frameworks.
+  </Card>
+</CardGroup>
+
+## Related pages
+
+- [Vector databases](/tools/vector-databases)
+- [MLOps and experiment tracking](/tools/mlops-experiment-tracking)
+- [Model serving and deployment](/tools/model-serving-deployment)
+- [Python general-purpose ML](/python/general-purpose)

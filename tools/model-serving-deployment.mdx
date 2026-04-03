@@ -1,0 +1,120 @@
+---
+title: 'Model serving and deployment'
+description: 'Tools for packaging, serving, and deploying ML models in production — including AutoML platforms, feature stores, model conversion, and data management.'
+keywords: ['model serving', 'deployment', 'bentoml', 'automl', 'feature store', 'feast', 'hopsworks', 'netron']
+---
+
+Once a model is trained, deploying it reliably requires tooling for packaging, serving, feature management, and infrastructure. This page covers the serving and deployment tools referenced in the Awesome Machine Learning repository.
+
+## Model serving
+
+Serving frameworks handle the packaging and exposure of models as APIs or streaming services.
+
+<CardGroup cols={2}>
+  <Card title="BentoML" icon="box" href="https://github.com/bentoml/bentoml">
+    Toolkit for packaging and deploying ML models for production serving. Supports multiple frameworks and generates Docker images and Kubernetes-ready deployment artifacts.
+  </Card>
+  <Card title="Cortex" icon="server" href="https://github.com/cortexlabs/cortex">
+    Open-source platform for deploying ML models in production. Handles auto-scaling, rolling updates, and multi-model serving on AWS and GCP.
+  </Card>
+  <Card title="Wallaroo.AI" icon="cloud" href="https://wallaroo.ai/">
+    Production AI platform for deploying, managing, and observing any model at scale across any environment from cloud to edge. Targets rapid deployment from notebook to inference.
+  </Card>
+  <Card title="Truss (Baseten)" icon="rocket" href="https://truss.baseten.co">
+    Open-source framework for packaging and serving ML models. Provides a consistent interface for building model containers and deploying to Baseten or custom infrastructure.
+  </Card>
+  <Card title="Hydrosphere Mist" icon="water" href="https://github.com/Hydrospheredata/mist">
+    Service for deploying Apache Spark MLlib machine learning models as realtime, batch, or reactive web services.
+  </Card>
+</CardGroup>
+
+## Model visualization
+
+<CardGroup cols={2}>
+  <Card title="Netron" icon="eye" href="https://netron.app/">
+    Open-source viewer for neural network, deep learning, and machine learning models. Supports ONNX, TensorFlow, Keras, Core ML, and dozens of other formats.
+  </Card>
+</CardGroup>
+
+## AutoML platforms
+
+AutoML platforms automate the selection, training, and tuning of models.
+
+<CardGroup cols={2}>
+  <Card title="MindsDB" icon="brain" href="https://github.com/mindsdb/mindsdb">
+    Open-source framework that brings machine learning into databases. Allows querying ML predictions using standard SQL from existing database connections.
+  </Card>
+  <Card title="Determined" icon="microchip" href="https://github.com/determined-ai/determined">
+    Scalable deep learning training platform with integrated support for distributed training, hyperparameter tuning, experiment tracking, and model management.
+  </Card>
+  <Card title="Polyaxon" icon="cubes" href="https://github.com/polyaxon/polyaxon">
+    Platform for reproducible and scalable machine learning and deep learning. Provides experiment tracking, scheduling, and deployment on Kubernetes.
+  </Card>
+  <Card title="Hopsworks" icon="database" href="https://github.com/logicalclocks/hopsworks">
+    Data-intensive platform for AI with an open-source feature store. Provides both a feature warehouse for training and a feature serving database for online applications.
+  </Card>
+</CardGroup>
+
+## Model conversion
+
+<CardGroup cols={2}>
+  <Card title="m2cgen" icon="code" href="https://github.com/BayesWitnesses/m2cgen">
+    Tool that converts trained ML models into native code with zero dependencies. Supports Java, C, Python, Go, JavaScript, Visual Basic, C#, R, PowerShell, PHP, and Dart — useful for embedding predictions in environments without an ML runtime.
+  </Card>
+</CardGroup>
+
+## Cloud GPU resources
+
+<CardGroup cols={2}>
+  <Card title="GPU Per Hour" icon="bolt" href="https://gpuperhour.com">
+    Real-time GPU cloud price comparison across 30+ providers. Helps find the most cost-effective compute for training and inference workloads.
+  </Card>
+</CardGroup>
+
+## Feature stores
+
+Feature stores provide a centralized layer for managing, serving, and sharing ML features across training and inference.
+
+<Note>
+A feature store separates feature computation from model training and serving. This ensures training and serving use the same feature values, eliminating training-serving skew.
+</Note>
+
+<CardGroup cols={2}>
+  <Card title="Feast" icon="store" href="https://github.com/gojek/feast">
+    Open-source feature store for the management, discovery, and access of ML features. Provides a consistent view of feature data for both model training and model serving.
+  </Card>
+  <Card title="Hopsworks Feature Store" icon="layer-group" href="https://github.com/logicalclocks/hopsworks">
+    The feature store component of the Hopsworks platform. Includes a feature warehouse based on Apache Hive for training and a MySQL Cluster-backed serving store for online applications.
+  </Card>
+  <Card title="ByteHub" icon="clock" href="https://github.com/bytehub-ai/bytehub">
+    Easy-to-use, Python-based feature store optimized for time-series data.
+  </Card>
+</CardGroup>
+
+## Data management
+
+<CardGroup cols={2}>
+  <Card title="Hub (Activeloop)" icon="hard-drive" href="https://github.com/activeloopai/Hub">
+    Fastest unstructured dataset management for TensorFlow and PyTorch. Supports streaming and version control for datasets up to petabyte scale using a numpy-like array interface.
+  </Card>
+  <Card title="VDP (Instill AI)" icon="filter" href="https://github.com/instill-ai/vdp">
+    Open-source visual data ETL to streamline end-to-end visual data processing pipelines. Extracts unstructured visual data, transforms it with Vision AI models, and loads insights into warehouses or applications.
+  </Card>
+</CardGroup>
+
+## Deployment orchestration
+
+<CardGroup cols={2}>
+  <Card title="Aqueduct" icon="pipe-section" href="https://github.com/aqueducthq/aqueduct">
+    Enables easy definition, execution, and management of AI and ML tasks on any cloud infrastructure. Abstracts away the complexity of cloud resource management.
+  </Card>
+  <Card title="ORYX" icon="infinity" href="https://github.com/oryxproject/oryx">
+    Lambda Architecture framework using Apache Spark and Apache Kafka, specialized for real-time large-scale machine learning. Implements the batch, speed, and serving layers of the Lambda Architecture.
+  </Card>
+</CardGroup>
+
+## Related pages
+
+- [MLOps and experiment tracking](/tools/mlops-experiment-tracking)
+- [Vector databases](/tools/vector-databases)
+- [Python general-purpose ML](/python/general-purpose)

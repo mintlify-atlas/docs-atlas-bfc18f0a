@@ -1,0 +1,113 @@
+---
+title: 'R'
+description: 'ML and statistics libraries for R — covering general-purpose ML, data manipulation, visualization, NLP, time series, Bayesian inference, and network analysis.'
+keywords: ['R', 'caret', 'ggplot2', 'randomForest', 'machine learning', 'statistics', 'tidyverse']
+---
+
+R has been a first-class environment for statistical computing and machine learning for decades. Its CRAN ecosystem provides thousands of packages covering everything from classical statistics to modern gradient boosting and deep learning.
+
+<Info>
+  Many R packages interoperate with Python via [reticulate](https://rstudio.github.io/reticulate/). For Python ML tools, see the [Python general-purpose ML](/python/general-purpose) page.
+</Info>
+
+## General-purpose ML
+
+<Columns cols={2}>
+  <Card title="caret" icon="sliders-h" href="https://topepo.github.io/caret/index.html">
+    Classification and Regression Training: a unified interface to approximately 150 ML algorithms, handling pre-processing, tuning, and resampling.
+  </Card>
+  <Card title="randomForest" icon="tree" href="https://cran.r-project.org/web/packages/randomForest/index.html">
+    Breiman and Cutler's random forests implementation for classification and regression.
+  </Card>
+  <Card title="e1071" icon="flask" href="https://cran.r-project.org/web/packages/e1071/index.html">
+    Miscellaneous functions from TU Wien's statistics department including SVMs (via libsvm), naive Bayes, and fuzzy clustering.
+  </Card>
+  <Card title="SuperLearner" icon="layer-group" href="https://github.com/ecpolley/SuperLearner">
+    Multi-algorithm ensemble learning: stacks arbitrary learners using cross-validation-based weighting.
+  </Card>
+  <Card title="h2o (R)" icon="water" href="https://cran.r-project.org/web/packages/h2o/index.html">
+    R interface to H2O's distributed ML engine: deep learning, random forests, GBM, K-means, PCA, and GLM.
+  </Card>
+  <Card title="kernlab" icon="atom" href="https://cran.r-project.org/web/packages/kernlab/index.html">
+    Kernel-based ML Lab covering SVMs, kernel PCA, Gaussian processes, and spectral clustering.
+  </Card>
+  <Card title="glmnet" icon="minus" href="https://cran.r-project.org/web/packages/glmnet/index.html">
+    Lasso and elastic-net regularized generalized linear models, with efficient cyclical coordinate-descent algorithms.
+  </Card>
+  <Card title="gbm" icon="arrow-trend-up" href="https://cran.r-project.org/web/packages/gbm/index.html">
+    Generalized Boosted Regression Models implementing Friedman's stochastic gradient boosting.
+  </Card>
+  <Card title="mlr" icon="robot" href="https://cran.r-project.org/web/packages/mlr/index.html">
+    Machine Learning in R: a unified framework covering classification, regression, survival analysis, clustering, and cost-sensitive learning.
+  </Card>
+  <Card title="XGBoost.R" icon="bolt" href="https://github.com/tqchen/xgboost/tree/master/R-package">
+    R binding for the XGBoost gradient boosting library, one of the most widely used tools in competitive ML.
+  </Card>
+</Columns>
+
+## Data manipulation
+
+<Columns cols={2}>
+  <Card title="dplyr" icon="filter" href="https://www.rdocumentation.org/packages/dplyr/versions/0.7.8">
+    Core tidyverse package for data manipulation: filter, select, mutate, summarize, and join operations on data frames.
+  </Card>
+  <Card title="data.table" icon="table" href="https://rdatatable.gitlab.io/data.table/">
+    High-performance version of base R's `data.frame` with concise syntax for fast aggregation and joins on large datasets.
+  </Card>
+</Columns>
+
+## Visualization
+
+<Columns cols={2}>
+  <Card title="ggplot2" icon="chart-bar" href="https://ggplot2.tidyverse.org/">
+    Data visualization package based on the Grammar of Graphics, the dominant plotting system in the R ecosystem.
+  </Card>
+  <Card title="plotly (R)" icon="chart-line" href="https://plot.ly/r/">
+    Interactive charts for R via the Plotly JavaScript library, including 3D plots and maps.
+  </Card>
+  <Card title="shiny" icon="window-maximize" href="https://shiny.rstudio.com/">
+    Framework for building interactive web applications and dashboards directly from R scripts, with no web development experience required.
+  </Card>
+</Columns>
+
+## Text & NLP
+
+<Columns cols={2}>
+  <Card title="tm" icon="file-alt" href="https://www.rdocumentation.org/packages/tm/">
+    Text Mining framework for managing, analyzing, and transforming text corpora in R.
+  </Card>
+  <Card title="quanteda" icon="quote-left" href="https://quanteda.io/">
+    Quantitative analysis of textual data: fast, flexible, and feature-rich NLP for political science, social science, and linguistics.
+  </Card>
+</Columns>
+
+## Time series & statistics
+
+<Columns cols={2}>
+  <Card title="forecast" icon="clock" href="https://cran.r-project.org/web/packages/forecast/index.html">
+    Time series forecasting using ARIMA, ETS, STLM, TBATS, and neural network models.
+  </Card>
+  <Card title="forecastHybrid" icon="code-branch" href="https://cran.r-project.org/web/packages/forecastHybrid/index.html">
+    Automatic ensembles and cross-validation across ARIMA, ETS, STLM, TBATS, and neural network models from the `forecast` package.
+  </Card>
+</Columns>
+
+## Bayesian inference
+
+<Columns cols={2}>
+  <Card title="Stan (R interface / rstan)" icon="infinity" href="https://mc-stan.org/">
+    R interface to the Stan probabilistic programming language for full Bayesian statistical inference with Hamiltonian Monte Carlo sampling.
+  </Card>
+</Columns>
+
+## Network analysis
+
+<Columns cols={2}>
+  <Card title="igraph (R)" icon="circle-nodes" href="https://igraph.org/r/">
+    R binding to the igraph C library for general-purpose graph analysis: community detection, centrality measures, and layout algorithms.
+  </Card>
+</Columns>
+
+<Tip>
+  The tidyverse meta-package (`install.packages("tidyverse")`) installs ggplot2, dplyr, tidyr, readr, and several other commonly used packages in one step.
+</Tip>

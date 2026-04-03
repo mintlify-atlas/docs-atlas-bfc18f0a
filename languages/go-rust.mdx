@@ -1,0 +1,207 @@
+---
+title: 'Go, Rust & other languages'
+description: 'ML libraries for Go and Rust, plus coverage of Elixir, Haskell, Common Lisp, Clojure, OCaml, Erlang, and Fortran.'
+keywords: ['go', 'rust', 'golang', 'machine learning', 'gorgonia', 'linfa', 'candle', 'burn', 'golearn', 'elixir', 'haskell', 'clojure']
+---
+
+Go and Rust have both developed meaningful ML ecosystems in recent years. Go's concurrency model makes it well suited for ML serving infrastructure, while Rust's memory safety and zero-cost abstractions are increasingly popular for high-performance inference. This page also covers a collection of smaller language ecosystems.
+
+<Tabs>
+  <Tab title="Go">
+
+## General-purpose ML
+
+<Columns cols={2}>
+  <Card title="Gorgonia" icon="brain" href="https://github.com/gorgonia/gorgonia">
+    Deep learning in Go — a library for building and executing computation graphs on CPUs and GPUs.
+  </Card>
+  <Card title="GoLearn" icon="graduation-cap" href="https://github.com/sjwhitworth/golearn">
+    Machine learning for Go with a scikit-learn-inspired API: K-nearest neighbors, decision trees, random forests, regression.
+  </Card>
+  <Card title="Spago" icon="circle-nodes" href="https://github.com/nlpodyssey/spago">
+    Self-contained machine learning and NLP library in Go with no external dependencies and built-in transformer support.
+  </Card>
+  <Card title="goml" icon="robot" href="https://github.com/cdipaolo/goml">
+    Machine learning library written in pure Go with online learning support.
+  </Card>
+  <Card title="gorse" icon="thumbs-up" href="https://github.com/zhenghaoz/gorse">
+    Offline recommender system backend based on collaborative filtering, written in Go with a REST API.
+  </Card>
+  <Card title="birdland" icon="dove" href="https://github.com/rlouf/birdland">
+    Recommendation library in Go for generating item recommendations from user interaction data.
+  </Card>
+</Columns>
+
+## NLP
+
+<Columns cols={2}>
+  <Card title="Cybertron" icon="robot" href="https://github.com/nlpodyssey/cybertron">
+    Transformers in Go: BERT, BART, ELECTRA and other modern NLP models with pre-trained weights.
+  </Card>
+  <Card title="snowball" icon="snowflake" href="https://github.com/tebeka/snowball">
+    Snowball stemmer for Go, supporting multiple languages.
+  </Card>
+  <Card title="word-embedding" icon="font" href="https://github.com/ynqa/word-embedding">
+    Full Go implementations of Word2Vec and GloVe word embedding algorithms.
+  </Card>
+  <Card title="sentences" icon="align-left" href="https://github.com/neurosnap/sentences">
+    Golang implementation of the Punkt sentence tokenizer for segmenting text into sentences.
+  </Card>
+</Columns>
+
+## Data analysis & visualization
+
+<Columns cols={2}>
+  <Card title="dataframe-go" icon="table" href="https://github.com/rocketlaunchr/dataframe-go">
+    Dataframes for machine learning and statistics in Go, similar in concept to pandas.
+  </Card>
+  <Card title="gota" icon="filter" href="https://github.com/go-gota/gota">
+    Dataframes and data wrangling for Go, supporting CSV/JSON import, filtering, grouping, and joins.
+  </Card>
+  <Card title="gonum/mat" icon="calculator" href="https://godoc.org/gonum.org/v1/gonum/mat">
+    Linear algebra package for Go: dense and sparse matrices, factorizations, and BLAS/LAPACK operations.
+  </Card>
+  <Card title="gonum/plot" icon="chart-line" href="https://godoc.org/gonum.org/v1/plot">
+    Plotting library for Go supporting scatter, line, bar, histogram, and box plots.
+  </Card>
+  <Card title="gonum/stat" icon="sigma" href="https://godoc.org/gonum.org/v1/gonum/stat">
+    Statistics library for Go: descriptive stats, distributions, hypothesis testing, and regression.
+  </Card>
+</Columns>
+
+## Computer vision
+
+<Columns cols={2}>
+  <Card title="GoCV" icon="eye" href="https://github.com/hybridgroup/gocv">
+    Go package for computer vision using OpenCV 4 and beyond, with support for cameras, video, and ML inference.
+  </Card>
+</Columns>
+
+  </Tab>
+  <Tab title="Rust">
+
+## General-purpose ML
+
+<Columns cols={2}>
+  <Card title="Linfa" icon="toolbox" href="https://github.com/rust-ml/linfa">
+    Comprehensive toolkit to build ML applications with Rust, analogous to scikit-learn: clustering, classification, regression.
+  </Card>
+  <Card title="smartcore" icon="star" href="https://github.com/smartcorelib/smartcore">
+    The most advanced ML library in Rust, featuring logistic regression, SVMs, decision trees, random forests, and more.
+  </Card>
+  <Card title="delta" icon="triangle" href="https://github.com/delta-rs/delta">
+    Open source machine learning framework in Rust with automatic differentiation and neural network support.
+  </Card>
+</Columns>
+
+## Deep learning
+
+<Columns cols={2}>
+  <Card title="candle" icon="fire" href="https://github.com/huggingface/candle">
+    Minimalist ML framework for Rust by Hugging Face with a focus on performance (including GPU support) and ease of use.
+  </Card>
+  <Card title="burn" icon="bolt" href="https://github.com/tracel-ai/burn">
+    Comprehensive dynamic deep learning framework for Rust with extreme flexibility, compute efficiency, and portability.
+  </Card>
+  <Card title="tch-rs" icon="code" href="https://github.com/LaurentMazare/tch-rs">
+    Rust bindings for the C++ API of PyTorch, enabling PyTorch model training and inference from Rust.
+  </Card>
+  <Card title="dfdx" icon="shapes" href="https://github.com/coreylowman/dfdx">
+    Deep learning in Rust with compile-time shape-checked tensors and neural networks.
+  </Card>
+</Columns>
+
+## NLP
+
+<Columns cols={2}>
+  <Card title="rust-bert" icon="comment-dots" href="https://github.com/guillaume-be/rust-bert">
+    Rust-native ready-to-use NLP pipelines and transformer-based models: BERT, DistilBERT, GPT-2, and more.
+  </Card>
+  <Card title="tokenizers" icon="scissors" href="https://github.com/huggingface/tokenizers">
+    Fast state-of-the-art tokenizers by Hugging Face, optimized for research and production with a Rust core.
+  </Card>
+</Columns>
+
+  </Tab>
+  <Tab title="Other languages">
+
+## Elixir
+
+<Columns cols={2}>
+  <Card title="Simple Bayes" icon="flask" href="https://github.com/fredwu/simple_bayes">
+    Simple Bayes / Naive Bayes implementation in Elixir for text classification and spam filtering.
+  </Card>
+  <Card title="Tensorflex" icon="brain" href="https://github.com/anshuman23/tensorflex">
+    TensorFlow bindings for the Elixir programming language.
+  </Card>
+  <Card title="emel" icon="star" href="https://github.com/mrdimosthenis/emel">
+    Simple and functional machine learning library written in Elixir.
+  </Card>
+</Columns>
+
+## Haskell
+
+<Columns cols={2}>
+  <Card title="hnn" icon="network-wired" href="https://github.com/alpmestan/HNN">
+    Haskell Neural Network library for building and training feedforward networks.
+  </Card>
+</Columns>
+
+## Common Lisp
+
+<Columns cols={2}>
+  <Card title="cl-online-learning" icon="infinity" href="https://github.com/masatoi/cl-online-learning">
+    Online learning algorithms in Common Lisp: Perceptron, AROW, SCW, and Logistic Regression.
+  </Card>
+  <Card title="cl-random-forest" icon="tree" href="https://github.com/masatoi/cl-random-forest">
+    Implementation of Random Forest in Common Lisp.
+  </Card>
+</Columns>
+
+## Clojure
+
+<Columns cols={2}>
+  <Card title="scicloj.ml" icon="circle-nodes" href="https://github.com/scicloj/scicloj.ml">
+    Idiomatic Clojure ML library based on tech.ml.dataset with immutable data processing pipelines.
+  </Card>
+  <Card title="tech.ml.dataset" icon="table" href="https://github.com/techascent/tech.ml.dataset">
+    Clojure dataframe library and pipeline for data processing and machine learning.
+  </Card>
+</Columns>
+
+## OCaml
+
+<Columns cols={2}>
+  <Card title="Oml" icon="sigma" href="https://github.com/rleonid/oml">
+    General statistics and machine learning library for OCaml.
+  </Card>
+  <Card title="TensorFlow-OCaml" icon="fire" href="https://github.com/LaurentMazare/tensorflow-ocaml">
+    OCaml bindings for TensorFlow enabling model training and inference from OCaml.
+  </Card>
+</Columns>
+
+## Erlang
+
+<Columns cols={2}>
+  <Card title="Disco" icon="server" href="https://github.com/discoproject/disco/">
+    Map-Reduce in Erlang for distributed data processing. **[Deprecated]**
+  </Card>
+</Columns>
+
+## Fortran
+
+<Columns cols={2}>
+  <Card title="neural-fortran" icon="microchip" href="https://github.com/modern-fortran/neural-fortran">
+    Parallel neural network microframework for modern Fortran with coarray-based parallelism.
+  </Card>
+  <Card title="ParaMonte (Fortran)" icon="chart-scatter" href="https://github.com/cdslaborg/paramonte">
+    General-purpose Fortran library for Bayesian data analysis and visualization via serial/parallel Monte Carlo and MCMC simulations.
+  </Card>
+</Columns>
+
+  </Tab>
+</Tabs>
+
+<Tip>
+  Rust's `candle` and `burn` frameworks can export to ONNX, allowing models trained in Rust to be served by any ONNX-compatible runtime. See the [C/C++ deployment](/languages/cpp-c) page for ONNX server options.
+</Tip>

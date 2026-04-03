@@ -1,0 +1,157 @@
+---
+title: 'Deep learning frameworks'
+description: 'Python deep learning frameworks including PyTorch, TensorFlow, JAX, and distributed training libraries.'
+keywords: ['pytorch', 'tensorflow', 'keras', 'jax', 'flax', 'hugging face', 'fastai', 'deep learning']
+---
+
+A curated reference of Python deep learning frameworks sourced from the [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning) list.
+
+For classical ML, AutoML, and Bayesian methods, see [General-purpose ML](/python/general-purpose).
+
+---
+
+## PyTorch ecosystem
+
+<Columns cols={2}>
+  <Card title="PyTorch" icon="fire" href="https://github.com/pytorch/pytorch">
+    Tensors and dynamic neural networks in Python with strong GPU acceleration. The dominant research and production deep learning framework.
+  </Card>
+  <Card title="PyTorch Lightning" icon="bolt" href="https://github.com/PyTorchLightning/pytorch-lightning">
+    Lightweight PyTorch wrapper for high-performance AI research. Handles the engineering boilerplate — logging, checkpointing, distributed training — so you focus on the model.
+  </Card>
+  <Card title="fastai" icon="rabbit" href="https://github.com/fastai/fastai">
+    High-level wrapper built on top of PyTorch. Supports vision, text, tabular data, and collaborative filtering with sensible defaults.
+  </Card>
+  <Card title="skorch" icon="wrench" href="https://github.com/skorch-dev/skorch">
+    Scikit-learn compatible neural network library that wraps PyTorch. Brings sklearn pipelines and cross-validation to deep learning.
+  </Card>
+</Columns>
+
+### Quick example: basic PyTorch model
+
+```python train.py
+import torch
+import torch.nn as nn
+
+# Define a simple feedforward network
+class MLP(nn.Module):
+    def __init__(self, in_features: int, hidden: int, out_features: int):
+        super().__init__()
+        self.net = nn.Sequential(
+            nn.Linear(in_features, hidden),
+            nn.ReLU(),
+            nn.Linear(hidden, out_features),
+        )
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        return self.net(x)
+
+# Instantiate, run a forward pass
+model = MLP(in_features=784, hidden=256, out_features=10)
+x = torch.randn(32, 784)  # batch of 32 flattened MNIST images
+logits = model(x)          # shape: (32, 10)
+print(logits.shape)
+```
+
+### PyTorch utilities
+
+<AccordionGroup>
+  <Accordion title="Supporting libraries" icon="toolbox">
+    | Library | Description |
+    |---|---|
+    | [einops](https://github.com/arogozhnikov/einops) | Deep learning operations reinvented. Express tensor rearrangements clearly for PyTorch, TensorFlow, JAX, and others. |
+    | [Catalyst](https://github.com/catalyst-team/catalyst) | High-level utilities for PyTorch DL & RL research, with a focus on reproducibility and fast experimentation. |
+    | [PyTorch Lightning Bolts](https://github.com/PyTorchLightning/pytorch-lightning-bolts) | Toolbox of models, callbacks, and datasets for AI/ML researchers built on top of PyTorch Lightning. |
+    | [Learnergy](https://github.com/gugarosa/learnergy) | Energy-based machine learning models (RBMs, DBNs) built upon PyTorch. |
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## TensorFlow ecosystem
+
+<Columns cols={2}>
+  <Card title="TensorFlow" icon="code" href="https://github.com/tensorflow/tensorflow/">
+    Google's open-source library for numerical computation using data flow graphs. Widely used for production deployment and mobile inference.
+  </Card>
+  <Card title="Keras" icon="layer-group" href="https://github.com/keras-team/keras">
+    High-level neural networks API running on top of TensorFlow (and previously CNTK and Theano). Emphasizes ease of use and fast prototyping.
+  </Card>
+  <Card title="TFLearn" icon="graduation-cap" href="https://github.com/tflearn/tflearn">
+    Deep learning library featuring a higher-level API for TensorFlow. Simplifies building, training, and evaluating deep neural networks.
+  </Card>
+  <Card title="TF-GAN" icon="image" href="https://github.com/tensorflow/gan">
+    Lightweight TensorFlow library for training and evaluating Generative Adversarial Networks (GANs).
+  </Card>
+</Columns>
+
+---
+
+## JAX ecosystem
+
+<Columns cols={2}>
+  <Card title="JAX" icon="bolt" href="https://github.com/google/jax">
+    Autograd and XLA brought together for high-performance machine learning research. Enables composable function transformations: `jit`, `grad`, `vmap`, `pmap`.
+  </Card>
+</Columns>
+
+---
+
+## Other frameworks
+
+<AccordionGroup>
+  <Accordion title="Chainer, MXNet, and CNTK" icon="cube">
+    | Library | Description |
+    |---|---|
+    | [Chainer](https://github.com/chainer/chainer) | Flexible neural network framework that pioneered the define-by-run approach (dynamic computational graphs). |
+    | [MXNet](https://github.com/apache/incubator-mxnet) | Lightweight, portable, flexible distributed/mobile deep learning with dynamic, mutation-aware dataflow scheduling. Supports Python, R, Julia, Go, and more. |
+    | [CNTK](https://github.com/Microsoft/CNTK) | Microsoft Cognitive Toolkit. Describes neural networks as a series of computational steps via a directed graph. |
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Hugging Face Transformers
+
+<Card title="Transformers" icon="robot" href="https://github.com/huggingface/transformers">
+  Deep learning library containing thousands of pre-trained models for NLP, vision, and audio tasks. The go-to library for anything related to Large Language Models. See also [NLP libraries](/python/nlp) for NLP-specific usage.
+</Card>
+
+---
+
+## Distributed and privacy-preserving training
+
+<Columns cols={2}>
+  <Card title="Colossal-AI" icon="server" href="https://github.com/hpcaitech/ColossalAI">
+    Open-source deep learning system for large-scale model training and inference with high efficiency and low cost. Supports tensor, pipeline, and sequence parallelism.
+  </Card>
+  <Card title="PySyft" icon="lock" href="https://github.com/OpenMined/PySyft">
+    Python library for secure and private deep learning built on PyTorch and TensorFlow. Enables federated learning and differential privacy.
+  </Card>
+</Columns>
+
+<Card title="PyGrid" icon="network-wired" href="https://github.com/OpenMined/PyGrid/">
+  Peer-to-peer network of data owners and data scientists who can collectively train AI models using PySyft without sharing raw data.
+</Card>
+
+---
+
+## Deprecated frameworks
+
+<Note>
+  The following frameworks are no longer actively maintained. They are listed for historical context and because you may encounter them in older codebases.
+</Note>
+
+| Framework | Notes |
+|---|---|
+| Theano | Pioneering GPU-meta-programming optimizing compiler. Superseded by TensorFlow and PyTorch. |
+| Lasagne | Lightweight library to build neural networks in Theano. |
+| neon (Nervana) | High-performance Python deep learning framework from Intel Nervana. **Deprecated.** |
+
+---
+
+## Related pages
+
+- [General-purpose ML](/python/general-purpose) — scikit-learn, XGBoost, AutoML
+- [NLP libraries](/python/nlp) — Transformers for NLP tasks, spaCy
+- [Computer vision](/python/computer-vision) — timm, Detectron2, albumentations

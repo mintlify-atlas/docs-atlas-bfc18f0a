@@ -1,0 +1,94 @@
+---
+title: "Contributing"
+description: "How to add libraries, tools, and resources to the Awesome Machine Learning list via pull request."
+---
+
+Awesome Machine Learning is community-maintained. You can contribute by submitting a pull request on GitHub to add a new library, update an existing entry, or flag a deprecated repository.
+
+<Note>
+  The source repository is at [github.com/josephmisiti/awesome-machine-learning](https://github.com/josephmisiti/awesome-machine-learning). All changes go through pull requests.
+</Note>
+
+## Contribution workflow
+
+<Steps>
+  <Step title="Find the right section in README.md">
+    Open `README.md` in the repository. Entries are organized by **programming language**, then by **domain** within that language (e.g., General-Purpose Machine Learning, NLP, Computer Vision). Locate the section that matches the library you want to add.
+  </Step>
+  <Step title="Check that the library isn't already listed">
+    Search the file for the library name before adding it. Duplicates are not accepted.
+  </Step>
+  <Step title="Verify inclusion criteria">
+    Confirm the library meets all criteria listed below before proceeding. Entries that don't meet the criteria will not be merged.
+  </Step>
+  <Step title="Add your entry in the correct place">
+    Insert a new bullet point in alphabetical order within the appropriate section. Use this format:
+
+    ```markdown
+    * [Library Name](https://link-to-repo) - A concise, factual description of what the library does.
+    ```
+
+    Keep the description to one sentence. Avoid marketing language.
+  </Step>
+  <Step title="Open a pull request">
+    Fork the repository, commit your change to a new branch, and open a pull request against the `master` branch. In the PR description, briefly explain what the library does and why it belongs in the list.
+  </Step>
+</Steps>
+
+## Criteria for inclusion
+
+An entry should meet all of the following:
+
+- **Active maintenance** — the repository has received commits within the past 2–3 years, or the project has an active release cycle.
+- **Relevance** — the library directly supports machine learning, data science, NLP, computer vision, deep learning, or a related domain.
+- **Open source** — the library is publicly available and has a clear license. Commercial tools may be listed if they have a meaningful free tier or open-source core.
+- **Quality** — the library has documentation, a working installation path, and is not an early-stage proof of concept with no real usage.
+
+<Tip>
+  A high star count is not required for inclusion. A well-maintained, domain-specific library with a small community is a better fit than an unmaintained library with many historical stars.
+</Tip>
+
+## Deprecation criteria
+
+An existing entry should be marked **[Deprecated]** — not removed — when either of the following is true:
+
+- The repository owner explicitly states the project is no longer maintained (e.g., in the README or via a repository archive).
+- The repository has received **no commits in 2–3 years**.
+
+To flag a deprecated entry, open a pull request that appends `**[Deprecated]**` to the end of the entry text. Do not delete the entry — deprecated libraries are kept for historical reference.
+
+<Warning>
+  Do not open PRs that remove deprecated entries outright. They are intentionally preserved so that projects already using them can still find documentation and context.
+</Warning>
+
+## How entries are organized
+
+The list follows a strict two-level hierarchy:
+
+1. **Programming language** — e.g., Python, R, Julia, JavaScript
+2. **Domain within that language** — e.g., General-Purpose Machine Learning, NLP, Computer Vision, Data Analysis
+
+When you add a new entry, place it in the correct language section and the correct domain subsection. If you're unsure which domain fits best, use **General-Purpose Machine Learning**.
+
+<AccordionGroup>
+  <Accordion title="What if no section exists for my language?">
+    If the language doesn't have a section yet, add a new top-level section with an anchor tag and at least one domain subsection. Follow the existing format exactly — including the HTML anchor comments — so the table of contents stays consistent.
+  </Accordion>
+  <Accordion title="What if no domain subsection exists for my entry?">
+    Add a new domain subsection under the language. Use one of the established domain names (e.g., "General-Purpose Machine Learning", "Natural Language Processing") for consistency. Only create a new domain name if none of the existing ones apply.
+  </Accordion>
+  <Accordion title="Can I add tools, books, courses, or events?">
+    Yes. Tools go in the **Tools** section at the bottom of the README. Books, courses, events, blogs, and meetups each have their own companion files in the repository. Submit PRs for those files accordingly.
+  </Accordion>
+</AccordionGroup>
+
+## Related pages
+
+<Columns cols={2}>
+  <Card title="Introduction" icon="info" href="/introduction">
+    Overview of the list, its scope, and how it's organized.
+  </Card>
+  <Card title="Python libraries" icon="python" href="/python/general-purpose">
+    The Python section — the most active part of the list.
+  </Card>
+</Columns>

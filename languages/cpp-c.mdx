@@ -1,0 +1,216 @@
+---
+title: 'C, C++, .NET, Swift & Objective-C'
+description: 'High-performance ML libraries for C, C++, .NET, Swift, and Objective-C — covering deep learning, computer vision, NLP, gradient boosting, and model deployment.'
+keywords: ['c++', 'c', '.net', 'swift', 'objective-c', 'xgboost', 'lightgbm', 'caffe', 'opencv', 'ml.net', 'machine learning']
+---
+
+C and C++ remain the foundation of high-performance ML infrastructure. Many Python libraries (XGBoost, LightGBM, OpenCV) are C++ under the hood. This page covers the native libraries directly.
+
+<Tabs>
+  <Tab title="C">
+
+## General-purpose ML
+
+<Columns cols={2}>
+  <Card title="Darknet" icon="network-wired" href="https://github.com/pjreddie/darknet">
+    Open source neural network framework written in C and CUDA. Fast, easy to install, and supports CPU and GPU. The original YOLO implementation.
+  </Card>
+  <Card title="neonrvm" icon="atom" href="https://github.com/siavashserver/neonrvm">
+    Open source ML library based on the Relevance Vector Machine (RVM) technique, written in C with Python bindings.
+  </Card>
+  <Card title="cONNXr" icon="microchip" href="https://github.com/alrevuelta/cONNXr">
+    ONNX runtime written in pure C99 with zero dependencies, focused on small embedded devices.
+  </Card>
+  <Card title="libonnx" icon="box" href="https://github.com/xboot/libonnx">
+    Lightweight, portable pure C99 ONNX inference engine for embedded devices with hardware acceleration support.
+  </Card>
+  <Card title="Recommender" icon="thumbs-up" href="https://github.com/GHamrouni/Recommender">
+    C library for product recommendations using collaborative filtering (CF).
+  </Card>
+</Columns>
+
+  </Tab>
+  <Tab title="C++">
+
+## General-purpose ML
+
+<Columns cols={2}>
+  <Card title="XGBoost" icon="bolt" href="https://github.com/dmlc/xgboost">
+    Parallelized, optimized general-purpose gradient boosting library used extensively in competitions and production.
+  </Card>
+  <Card title="LightGBM" icon="feather" href="https://github.com/Microsoft/LightGBM">
+    Microsoft's fast, distributed, high-performance gradient boosting framework based on decision tree algorithms.
+  </Card>
+  <Card title="CatBoost" icon="cat" href="https://github.com/catboost/catboost">
+    Gradient boosting on decision trees with native categorical feature support and fast CPU/GPU inference.
+  </Card>
+  <Card title="mlpack" icon="cubes" href="https://www.mlpack.org/">
+    Scalable C++ ML library with fast implementations of common algorithms: random forests, k-means, SVMs, neural networks.
+  </Card>
+  <Card title="Shogun" icon="toolbox" href="https://github.com/shogun-toolbox/shogun">
+    The Shogun Machine Learning Toolbox — a large collection of ML algorithms with interfaces to Python, R, Java, Octave, and more.
+  </Card>
+  <Card title="DSSTNE" icon="server" href="https://github.com/amznlabs/amazon-dsstne">
+    Amazon's software library for training and deploying deep neural networks with an emphasis on speed and scale on GPUs.
+  </Card>
+  <Card title="DLib" icon="face-smile" href="http://dlib.net/ml.html">
+    Suite of ML tools for C++ including SVMs, deep learning, clustering, and image processing; easy to embed in other applications.
+  </Card>
+  <Card title="Vowpal Wabbit" icon="rabbit" href="https://github.com/VowpalWabbit/vowpal_wabbit">
+    Fast out-of-core learning system supporting many ML tasks including contextual bandits and reinforcement learning.
+  </Card>
+</Columns>
+
+## Deep learning
+
+<Columns cols={2}>
+  <Card title="Caffe" icon="coffee" href="https://github.com/BVLC/caffe">
+    Deep learning framework developed with cleanliness, readability, and speed in mind by Berkeley AI Research.
+  </Card>
+  <Card title="CNTK" icon="microsoft" href="https://github.com/Microsoft/CNTK">
+    Microsoft's Computational Network Toolkit describing neural networks as a directed graph of computational steps.
+  </Card>
+  <Card title="MXNet (C++)" icon="layer-group" href="https://github.com/apache/incubator-mxnet">
+    Lightweight, portable deep learning framework with C++, Python, R, Julia, Scala, Go, and JavaScript bindings.
+  </Card>
+  <Card title="oneDNN" icon="circle-nodes" href="https://github.com/oneapi-src/oneDNN">
+    Intel's open-source cross-platform performance library for deep learning primitives (convolutions, RNNs, batch norm).
+  </Card>
+  <Card title="DyNet" icon="arrows-rotate" href="https://github.com/clab/dynet">
+    Dynamic neural network library for networks with dynamic structures; C++ core with Python bindings.
+  </Card>
+  <Card title="Speedster" icon="gauge-high" href="https://github.com/nebuly-ai/nebullvm/tree/main/apps/accelerate/speedster">
+    Automatically applies SOTA optimization techniques to achieve maximum inference speed-up on your hardware.
+  </Card>
+</Columns>
+
+## Computer vision
+
+<Columns cols={2}>
+  <Card title="OpenCV (C++)" icon="eye" href="https://opencv.org">
+    The most widely used computer vision library, with C++, C, Python, Java, and MATLAB interfaces.
+  </Card>
+  <Card title="DLib (imaging)" icon="image" href="http://dlib.net/imaging.html">
+    C++ and Python interfaces for face detection and training general object detectors.
+  </Card>
+  <Card title="Openpose" icon="person-running" href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">
+    Real-time multi-person keypoint detection for body, face, hands, and foot estimation from Carnegie Mellon University.
+  </Card>
+  <Card title="VIGRA" icon="magnifying-glass-chart" href="https://github.com/ukoethe/vigra">
+    Generic cross-platform C++ computer vision and ML library for volumes of arbitrary dimensionality, with Python bindings.
+  </Card>
+</Columns>
+
+## NLP
+
+<Columns cols={2}>
+  <Card title="BLLIP Parser" icon="code-branch" href="https://github.com/BLLIP/bllip-parser">
+    BLLIP Natural Language Parser (also known as the Charniak-Johnson parser) for constituency parsing.
+  </Card>
+  <Card title="CRF++" icon="list" href="https://taku910.github.io/crfpp/">
+    Open source implementation of Conditional Random Fields for segmenting/labeling sequential data. **[Deprecated]**
+  </Card>
+  <Card title="SentencePiece" icon="scissors" href="https://github.com/google/sentencepiece">
+    C++ library by Google for unsupervised text tokenization and detokenization, widely used in modern NLP models.
+  </Card>
+  <Card title="MIT MITIE" icon="tag" href="https://github.com/mit-nlp/MITIE">
+    C, C++, and Python tools for named entity recognition and relation extraction from MIT.
+  </Card>
+</Columns>
+
+## Feature stores & deployment
+
+<Columns cols={2}>
+  <Card title="Feast" icon="store" href="https://github.com/gojek/feast">
+    Feature store for management, discovery, and access of ML features providing a consistent view for training and serving.
+  </Card>
+  <Card title="Hopsworks" icon="database" href="https://github.com/logicalclocks/hopsworks">
+    Data-intensive platform for AI with an open-source feature store backed by Apache Hive and MySQL Cluster.
+  </Card>
+  <Card title="DeepDetect" icon="server" href="https://github.com/jolibrain/deepdetect">
+    Machine learning API and server written in C++11 making state-of-the-art ML easy to integrate.
+  </Card>
+  <Card title="Truss" icon="box-open" href="https://truss.baseten.co">
+    Open source framework for packaging and serving ML models, with opinionated conventions for reproducibility.
+  </Card>
+  <Card title="nndeploy" icon="rocket" href="https://github.com/nndeploy/nndeploy">
+    Easy-to-use and high-performance AI deployment framework supporting multiple inference backends.
+  </Card>
+</Columns>
+
+## Reinforcement learning
+
+<Columns cols={2}>
+  <Card title="RLtools" icon="gamepad" href="https://github.com/rl-tools/rl-tools">
+    The fastest deep reinforcement learning library for continuous control, implemented header-only in pure, dependency-free C++.
+  </Card>
+</Columns>
+
+  </Tab>
+  <Tab title=".NET">
+
+## Computer vision
+
+<Columns cols={2}>
+  <Card title="Accord.NET" icon="eye" href="http://accord-framework.net">
+    Complete framework for building ML, computer vision, signal processing, and statistical applications for Windows and .NET.
+  </Card>
+  <Card title="Emgu CV" icon="camera" href="http://www.emgu.com/wiki/index.php/Main_Page">
+    Cross-platform wrapper of OpenCV that can be compiled with Mono to run on Windows, Linux, macOS, iOS, and Android.
+  </Card>
+</Columns>
+
+## General-purpose ML
+
+<Columns cols={2}>
+  <Card title="ML.NET" icon="microsoft" href="https://github.com/dotnet/machinelearning">
+    Cross-platform, open-source ML framework from Microsoft making ML accessible to .NET developers.
+  </Card>
+  <Card title="DiffSharp" icon="function" href="https://diffsharp.github.io/DiffSharp/">
+    Automatic differentiation library for F# providing exact, efficient derivatives for ML and optimization applications.
+  </Card>
+  <Card title="Infer.NET" icon="infinity" href="https://dotnet.github.io/infer/">
+    Framework for running Bayesian inference in graphical models: classification, recommendation, and clustering.
+  </Card>
+  <Card title="Synapses (.NET)" icon="brain" href="https://github.com/mrdimosthenis/Synapses">
+    Neural network library written in F# with bindings for Python, JavaScript, and Java.
+  </Card>
+</Columns>
+
+  </Tab>
+  <Tab title="Swift & Objective-C">
+
+## Swift
+
+<Columns cols={2}>
+  <Card title="Swift AI" icon="wand-sparkles" href="https://github.com/Swift-AI/Swift-AI">
+    Highly optimized artificial intelligence and ML library written in Swift.
+  </Card>
+  <Card title="Bender" icon="layer-group" href="https://github.com/xmartlabs/Bender">
+    Fast neural network framework built on Metal supporting TensorFlow models, optimized for iOS/macOS.
+  </Card>
+  <Card title="AIToolbox" icon="toolbox" href="https://github.com/KevinCoble/AIToolbox">
+    Toolbox framework of AI modules in Swift: graphs, linear regression, SVMs, neural networks, PCA, K-means, genetic algorithms.
+  </Card>
+  <Card title="Swift for TensorFlow" icon="fire" href="https://github.com/tensorflow/swift">
+    Next-generation ML platform incorporating differentiable programming directly into the Swift compiler.
+  </Card>
+</Columns>
+
+## Objective-C
+
+<Columns cols={2}>
+  <Card title="YCML" icon="apple" href="https://github.com/yconst/YCML">
+    Machine learning framework for Objective-C and Swift (macOS / iOS) covering Extreme Learning Machines and more.
+  </Card>
+  <Card title="MAChineLearning" icon="brain" href="https://github.com/gianlucabertani/MAChineLearning">
+    Objective-C multilayer perceptron library using vDSP and vecLib, 20× faster than its Java equivalent. Includes Swift sample code.
+  </Card>
+</Columns>
+
+  </Tab>
+</Tabs>
+
+<Tip>
+  XGBoost, LightGBM, and CatBoost all expose Python, R, and Julia interfaces on top of their C++ cores. Training in Python and deploying via C++ is a common production pattern covered on the [MLOps & experiment tracking](/tools/mlops-experiment-tracking) page.
+</Tip>
